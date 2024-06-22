@@ -1,0 +1,140 @@
+/* Reset y estilos generales */
+/* Estilos generales */
+
+  /* Header */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /*line-height: 1.6;*/
+    background-color: #f8f9fa; /* Color de fondo principal */
+    color: #343a40; /* Color de texto principal */
+    border-style: groove;
+}
+
+.container {
+   
+    margin: 0 ;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40; /* Color de fondo para el encabezado */
+    color: white;
+    padding: 10px 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+    
+}
+
+nav ul {
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    display: inline;
+    
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main {
+    margin-top: 20px;
+
+}
+
+.seccion1 {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.seccion1 h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.experiencias {
+    display: grid;
+    gap: 20px;
+}
+
+.experiencia {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.detalles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cargo {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.fecha h6 {
+    margin: 0;
+    color: #555;
+}
+
+.lugar {
+    color: #666;
+}
+
+.descripcion {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.separador {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.aptitudes {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.aptitudes h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .experiencias {
+        grid-template-columns: 1fr;
+    }
+}

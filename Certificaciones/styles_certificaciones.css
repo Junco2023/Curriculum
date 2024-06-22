@@ -1,0 +1,80 @@
+/* Reset general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Color de fondo principal */
+    color: #343a40; /* Color de texto principal */
+}
+
+ul {
+    list-style: none; /* Elimina los estilos de lista */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color de texto del padre */
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    background-color: #343a40; /* Color de fondo para el encabezado */
+    color: white; /* Color de texto para el encabezado */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5em; /* Espacio entre elementos del menú */
+}
+
+/* Estilos para la sección Certificaciones */
+.certificados {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f1f1; /* Color de fondo para la sección de certificaciones */
+    gap: 2em; /* Espacio entre certificaciones */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.certificacion {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc; /* Borde ligero */
+    padding: 15px;
+    max-width: 350px; /* Ancho máximo de la certificación */
+    width: 100%; /* Para ocupar el espacio disponible */
+    margin-bottom: 20px; /* Espacio inferior entre certificaciones */
+}
+
+.certificacion .nombre {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.certificacion .emisores {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre elementos */
+    margin-bottom: 10px;
+}
+
+.certificacion .emisor {
+    font-style: italic;
+    color: #666;
+}
+
+.certificacion .fecha {
+    color: #666;
+}
+
+.certificacion .Conocimientos {
+    line-height: 1.6;
+}

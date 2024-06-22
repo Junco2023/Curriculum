@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Sección Descripción del Proyecto */
+.descripcion-proyecto {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.proyecto {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Estilos para la sección de habilidades y aptitudes */
+.aptitudes-Proyecto {
+    background-color: #f1f1f1; /* Color de fondo para la sección */
+    padding: 30px;
+    margin-top: 20px;
+    border: 1px solid #ccc; /* Borde ligero */
+}
+
+.listadoAptitudes {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.habilidades {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* Color de fondo para cada sección de habilidades */
+    border: 1px solid #ced4da; /* Borde ligero */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.habilidades h3 {
+    color: #343a40; /* Color de texto principal */
+    margin-bottom: 10px;
+}
+
+.habilidades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.habilidades ul li {
+    color: #6c757d; /* Color de texto secundario */
+    margin-bottom: 8px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .listadoAptitudes {
+        flex-direction: column;
+    }
+
+    .habilidades {
+        margin-bottom: 20px;
+    }
+}
+

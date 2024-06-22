@@ -1,0 +1,235 @@
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Color de fondo principal */
+  color: #343a40; /* Color de texto principal */
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+/* Header */
+.header {
+  background-color: #343a40; /* Color de fondo para el encabezado */
+  color: white;
+  padding: 10px 0;
+  
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  border:1px solid red;
+}
+.header .container nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  border-style: double;
+}
+
+.header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Sección Acerca de mí */
+.section-about {
+  display: flex;
+  background-color: #ffffff; /* Color de fondo para la sección Acerca de mí */
+  padding: 50px;
+  margin-top: 20px;
+  border: 1px solid #e9ecef; /* Borde ligero */
+  text-align: center;
+}
+/*Acerca de Mi texto  */
+.section-about .acerca-de{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-about h2 {
+  color: #343a40; /* Color de texto principal */
+}
+
+.section-about p {
+  color: #6c757d; /* Color de texto secundario */
+}
+
+.section-about img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+/* Sección Información Personal */
+.section-personal-info {
+  background-color: #f1f8ff; /* Color de fondo para la sección Información Personal */
+  padding: 30px;
+  margin-top: 20px;
+  border: 2px solid #d0e3ff; /* Borde ligero */
+  position: relative;
+}
+.section-personal-info  .container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+border:  2px solid black;
+
+}
+
+.section-personal-info h3 {
+  position: absolute;
+  top: -40px;
+  left:40px;
+  padding: 5px 10px;
+  border: 1px solid #d0e3ff;
+  background-color: #f1f8ff;
+  color: #343a40; /* Color de texto principal */
+}
+
+.section-personal-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-personal-info ul li {
+  margin-bottom: 10px;
+}
+
+.section-personal-info ul li a {
+  color: #007bff; /* Color de enlace para los enlaces de Información Personal */
+}
+
+/* Sección Experiencia Laboral */
+.section-experience {
+  background-color: #f8f9fa; /* Color de fondo para la sección Experiencia Laboral */
+  padding: 30px;
+  margin-top: 20px;
+  border: 1px solid #dee2e6; /* Borde ligero */
+}
+
+.section-experience h3 {
+  color: #343a40; /* Color de texto principal */
+}
+
+.section-experience .experience {
+  background-color: #ffffff; /* Color de fondo para cada experiencia */
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da; /* Borde ligero */
+}
+
+.section-experience .experience .details .position {
+  color: #343a40; /* Color de texto principal */
+}
+
+.section-experience .experience .details .date {
+  color: #6c757d; /* Color de texto secundario */
+}
+
+.section-experience .experience .details .location {
+  color: #6c757d; /* Color de texto secundario */
+}
+
+.section-experience .experience .description {
+  color: #495057; /* Color de texto para la descripción */
+}
+
+/* Sección Certificaciones */
+.section-certifications {
+  background-color: #f1f1f1; /* Color de fondo para la sección Certificaciones */
+  padding: 30px;
+  margin-top: 20px;
+  border: 1px solid #ccc; /* Borde ligero */
+}
+
+.section-certifications h3 {
+  color: #333; /* Color de texto principal */
+}
+
+.section-certifications .certification {
+  background-color: #ffffff; /* Color de fondo para cada certificación */
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Borde ligero */
+}
+
+.section-certifications .certification .name {
+  color: #343a40; /* Color de texto principal */
+}
+
+.section-certifications .certification .issuer {
+  color: #6c757d; /* Color de texto secundario */
+}
+
+.section-certifications .certification .details {
+  color: #495057; /* Color de texto para los detalles */
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40; /* Color de fondo para el pie de página */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #ffffff; /* Color de enlace para el pie de página */
+  text-decoration: none;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+}
+
+/* Estilos adicionales */
+.aleatorio {
+  display: block;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+/* Estilos para la sección de descripción del proyecto */
+.seccion-descripcionProyecto {
+  background-color: #ffffff; /* Fondo blanco para resaltar la sección */
+  padding: 20px; /* Espaciado interno para un diseño limpio */
+  margin-top: 20px; /* Espaciado superior para separación de otras secciones */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+  border-radius: 8px; /* Bordes redondeados para un diseño moderno */
+}
+
+.descripcion {
+  background-color: #f9f9f9; /* Fondo claro para el contenido interno */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.proyecto {
+  font-size: 1.1rem; /* Tamaño de fuente para buena legibilidad */
+  line-height: 1.6; /* Altura de línea para espacio entre líneas */
+  color: #555; /* Color de texto para buen contraste */
+}
+
