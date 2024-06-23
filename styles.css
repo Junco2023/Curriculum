@@ -23,16 +23,16 @@ body {
 .header a {
   color: white;
   text-decoration: none;
-  border:1px solid red;
 }
-.header .container nav ul {
+.container .header nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  border-style: double;
+
 }
+
 
 .header nav ul li {
   display: inline;
@@ -161,22 +161,27 @@ color:#343a40
   padding: 30px;
   margin-top: 20px;
   border: 1px solid #dee2e6;
+  
 }
 .categoriasProgramas{
   display: flex;
   flex-wrap: wrap;
  justify-content: space-between;
+ background-color: #f9f9f9;
 }
 
  .seccion{
-  flex-direction: column;
+  flex-direction: row;
+  /*
   max-width: 250px;
   width: 250px;
+  */
   align-items: center;
   padding: 10px;
   margin-top: 10px;
   border-radius: 20px;
   border: 1px solid #343a40;
+  
 }
 
 /* Sección Experiencia Laboral */
@@ -261,7 +266,14 @@ color:#343a40
   color: #ffffff; /* Color de enlace para el pie de página */
   text-decoration: none;
 }
-
+   /*Logo footer*/
+.footer .logos ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 80%;
+}
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
   body{
@@ -272,14 +284,17 @@ color:#343a40
   
   /*Seccion Datos Personales y Estudios */
   .section-personal-info{
-    display: block;
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    
   }
 
   .datos{
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 20px;
+    text-align: center;
   }
   .datos h3 {
     position: absolute;
@@ -292,13 +307,47 @@ color:#343a40
   }
   /*Seccion Programas*/
   .programas .categoriasProgramas .seccion{
-    max-width: 180px;
-    max-height: 200px;
+    margin: 0.3em 0.5em;
   
   }
   
   
 }
+/**/
+@media(max-width:575.98px){
+  body{
+    background-color: red;
+  }
+/*Seccion Acerca de mi */
+ .section-about{
+  display: block;
+ }
+
+.container nav{
+  margin-left: 5em;
+  font-size: 0.6em;
+}
+  /*Secion Informacion Personal*/
+  .section-personal-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    
+  }
+  .datos{
+    width: 75%;
+  }
+  /*programas*/
+  .programas{
+    display: flex;
+    flex-direction: column;
+  }
+ .categoriasProgramas .seccion{
+  width: 90%;
+ }
+}
+
 
 /* Estilos adicionales */
 .aleatorio {
