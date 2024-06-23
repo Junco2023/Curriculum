@@ -19,6 +19,9 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #343a40; /* Color de fondo para el encabezado */
     color: white;
     padding: 10px 0;
@@ -130,9 +133,7 @@ main {
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
+    
 
     .experiencias {
         grid-template-columns: 1fr;

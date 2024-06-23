@@ -9,19 +9,14 @@ body {
   color: #343a40; /* Color de texto principal */
 }
 
-.container {
-  display: flex;
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-  justify-content: flex-end;
-}
-
 /* Header */
 .header {
+  display: flex ;
   background-color: #343a40; /* Color de fondo para el encabezado */
   color: white;
   padding: 10px 0;
+  align-items: center;
+  justify-content: space-between;
   
 }
 
@@ -53,6 +48,7 @@ body {
   border: 1px solid #e9ecef; /* Borde ligero */
   text-align: center;
 }
+
 /*Acerca de Mi texto  */
 .section-about .acerca-de{
   width: 80%;
@@ -76,27 +72,30 @@ body {
 }
 
 /* Sección Información Personal */
-.section-personal-info {
+.section-personal-info{
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.datos {
+  width: 300px;
+  height: 160px;
   background-color: #f1f8ff; /* Color de fondo para la sección Información Personal */
   padding: 30px;
-  margin-top: 20px;
+  margin: 20px;
   border: 2px solid #d0e3ff; /* Borde ligero */
   position: relative;
 }
-.section-personal-info  .container{
-display: flex;
-align-items: center;
-justify-content: space-between;
-border:  2px solid black;
 
-}
-
-.section-personal-info h3 {
+.datos h3 {
   position: absolute;
   top: -40px;
-  left:40px;
+  left:35px;
   padding: 5px 10px;
-  border: 1px solid #d0e3ff;
+  border: 2px solid #d0e3ff;
   background-color: #f1f8ff;
   color: #343a40; /* Color de texto principal */
 }
@@ -107,11 +106,77 @@ border:  2px solid black;
 }
 
 .section-personal-info ul li {
+  margin: 0px;
   margin-bottom: 10px;
 }
 
 .section-personal-info ul li a {
   color: #007bff; /* Color de enlace para los enlaces de Información Personal */
+}
+.section-personal-info .redes{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  
+}
+.section-personal-info  #redes {
+  display: flex;
+  gap: 2em;
+}
+
+
+/*Aptitudes*/
+.aptitudes{
+  
+  background-color: #f8f9fa;
+  padding: 30px;
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+}
+.aptitudes h3{
+  color: #343a40;
+}
+.aptitudes ul{
+  display: flex;
+  flex-wrap: wrap;  
+  align-items: center;
+  gap: 2.0em;
+  justify-content: flex-start;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+}
+/*Educacion Secundario*/
+.educacion{
+  background-color: #f8f9fa;
+  padding: 30px;
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+}
+.educacion h3{
+color:#343a40
+}
+/*Programas*/
+.programas{
+  background-color: #f8f9fa;
+  padding: 30px;
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+}
+.categoriasProgramas{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-between;
+}
+
+ .seccion{
+  flex-direction: column;
+  max-width: 250px;
+  width: 250px;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #343a40;
 }
 
 /* Sección Experiencia Laboral */
@@ -199,9 +264,40 @@ border:  2px solid black;
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .container {
-      width: 90%;
+  body{
+    background-color: #495057;
+    margin: 0;
+    padding: 0;
   }
+  
+  /*Seccion Datos Personales y Estudios */
+  .section-personal-info{
+    display: block;
+    align-items: center;
+  }
+
+  .datos{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .datos h3 {
+    position: absolute;
+    top: -40px;
+    left:30px;
+    padding: 5px 10px;
+    border: 2px solid #d0e3ff;
+    background-color: #f1f8ff;
+    color: #343a40; /* Color de texto principal */
+  }
+  /*Seccion Programas*/
+  .programas .categoriasProgramas .seccion{
+    max-width: 180px;
+    max-height: 200px;
+  
+  }
+  
+  
 }
 
 /* Estilos adicionales */
