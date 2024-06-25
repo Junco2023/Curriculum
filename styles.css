@@ -14,7 +14,7 @@ body {
   display: flex ;
   background-color: #343a40; /* Color de fondo para el encabezado */
   color: white;
-  padding: 10px 0;
+  padding: 10px 10px;
   align-items: center;
   justify-content: space-between;
   
@@ -163,25 +163,21 @@ color:#343a40
   border: 1px solid #dee2e6;
   
 }
-.categoriasProgramas{
+
+.categoriasProgramas {
   display: flex;
   flex-wrap: wrap;
- justify-content: space-between;
- background-color: #f9f9f9;
+  gap: 20px; /* Espacio entre las secciones */
+  background-color: #f9f9f9;
+  padding: 20px; /* Añade un poco de relleno al contenedor */
 }
 
- .seccion{
-  flex-direction: row;
-  /*
-  max-width: 250px;
-  width: 250px;
-  */
-  align-items: center;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 20px;
+.seccion {
+  flex: 1 0 200px; /* Establece un ancho mínimo de 250px */
+  padding: 20px;
+  border-radius: 8px;
   border: 1px solid #343a40;
-  
+  margin-bottom: 20px; /* Espacio entre las secciones */
 }
 
 /* Sección Experiencia Laboral */
@@ -274,8 +270,39 @@ color:#343a40
   list-style: none;
   width: 80%;
 }
+/* Estilos adicionales */
+.aleatorio {
+  display: block;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+/* Estilos para la sección de descripción del proyecto */
+.seccion-descripcionProyecto {
+  background-color: #ffffff; /* Fondo blanco para resaltar la sección */
+  padding: 20px; /* Espaciado interno para un diseño limpio */
+  margin-top: 20px; /* Espaciado superior para separación de otras secciones */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+  border-radius: 8px; /* Bordes redondeados para un diseño moderno */
+}
+
+.descripcion {
+  background-color: #f9f9f9; /* Fondo claro para el contenido interno */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.proyecto {
+  font-size: 1.1rem; /* Tamaño de fuente para buena legibilidad */
+  line-height: 1.6; /* Altura de línea para espacio entre líneas */
+  color: #555; /* Color de texto para buen contraste */
+}
+
+
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
+   /* Estilos para tablets en modo vertical y smartphones en modo horizontal */
   body{
     background-color: #495057;
     margin: 0;
@@ -321,10 +348,19 @@ color:#343a40
     color: #343a40; /* Color de texto principal */
   }
   /*Seccion Programas*/
-  .programas .categoriasProgramas .seccion{
-    margin: 0.3em 0.5em;
-  
-  }
+.categoriasProgramas {
+  gap: 20px; /* Espacio entre las secciones */
+  background-color: #f9f9f9;
+  padding: 20px; /* Añade un poco de relleno al contenedor */
+}
+
+.seccion {
+  flex: 1 0 150px; /* Establece un ancho mínimo de 250px */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #343a40;
+  margin-bottom: 20px; /* Espacio entre las secciones */
+}
   
   
 }
@@ -354,42 +390,23 @@ color:#343a40
     width: 75%;
   }
   /*programas*/
-  .programas{
-    display: flex;
-    flex-direction: column;
-  }
- .categoriasProgramas .seccion{
-  width: 90%;
- }
+.categoriasProgramas {
+  gap: 20px; /* Espacio entre las secciones */
+  background-color: #f9f9f9;
+  padding: 20px; /* Añade un poco de relleno al contenedor */
 }
 
-
-/* Estilos adicionales */
-.aleatorio {
-  display: block;
-  background-color: aquamarine;
+.seccion {
+  flex: 1 0 120px; /* Establece un ancho mínimo de 250px */
   padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #343a40;
+  margin-bottom: 20px; /* Espacio entre las secciones */
 }
 
-/* Estilos para la sección de descripción del proyecto */
-.seccion-descripcionProyecto {
-  background-color: #ffffff; /* Fondo blanco para resaltar la sección */
-  padding: 20px; /* Espaciado interno para un diseño limpio */
-  margin-top: 20px; /* Espaciado superior para separación de otras secciones */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
-  border-radius: 8px; /* Bordes redondeados para un diseño moderno */
-}
 
-.descripcion {
-  background-color: #f9f9f9; /* Fondo claro para el contenido interno */
-  padding: 10px; /* Espaciado interno */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-}
 
-.proyecto {
-  font-size: 1.1rem; /* Tamaño de fuente para buena legibilidad */
-  line-height: 1.6; /* Altura de línea para espacio entre líneas */
-  color: #555; /* Color de texto para buen contraste */
-}
 
+@media (max-width: 1024px) {
+  /* Estilos para tablets en modo horizontal y laptops pequeñas */
+}
