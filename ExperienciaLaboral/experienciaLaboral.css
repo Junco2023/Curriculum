@@ -30,6 +30,8 @@ main {
 
 .experiencia {
     background-color: #fff;
+   
+    width: auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;

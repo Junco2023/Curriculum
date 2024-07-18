@@ -21,11 +21,11 @@
 
 .certificacion {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     border: 1px solid #ccc;
     /* Borde ligero */
     padding: 0.6em;
-    max-width: 350px;
+    max-width: 40em;
     /* Ancho máximo de la certificación */
     width: 100%;
     /* Para ocupar el espacio disponible */
@@ -75,14 +75,18 @@
     .certificados{
         background-color: #eff0f3;
         margin: 0;
+        display: flex;
+        flex-wrap: wrap;
         
 
     }
-    .seccion1 .certificacion{
+    .seccion1 .certificados .certificacion{
        padding: 1em;
        background-color: #f8f9fa;
        border-radius: 1.5em;
        border: 1px solid #343a40;
+       max-width: 80em;
+       
     }
     
 }

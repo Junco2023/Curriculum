@@ -1,3 +1,11 @@
+/*
+PALETA DE COLORES DE OSCURO A CLARO  
+#8e7e89  ALTO
+#a0909b  ALTO-BAJO
+#b3a2ae  MEDIO
+#c5b4c0  MEDIO-BAJO
+#d7c6d2  BAJO
+/*/
 /* Estilos generales */
 body {
   margin: 0;
@@ -114,8 +122,8 @@ display: block;
 
 /* Sección Información Personal */
 .section-personal-info {
-  border: 2px solid black;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin: 10px;
@@ -124,11 +132,11 @@ display: block;
 .datos {
   width: 300px;
   height: 160px;
-  background-color: #f1f8ff;
+  background-color: #343a40f;
   /* Color de fondo para la sección Información Personal */
   padding: 30px;
   margin: 20px;
-  border: 2px solid #d0e3ff;
+  border: 2px solid #343a40;
   /* Borde ligero */
   position: relative;
 }
@@ -138,7 +146,7 @@ display: block;
   top: -40px;
   left: 35px;
   padding: 5px 10px;
-  border: 2px solid #d0e3ff;
+  border: 2px solid #343a40;
   background-color: #f1f8ff;
   color: #343a40;
   /* Color de texto principal */
@@ -178,7 +186,7 @@ display: block;
   background-color: #f8f9fa;
   padding: 30px;
   margin-top: 20px;
-  border: 1px solid #dee2e6;
+  
 }
 
 .aptitudes h3 {
@@ -192,12 +200,13 @@ display: block;
   gap: 2.0em;
   justify-content: flex-start;
   background-color: #f8f9fa;
-  border: 1px solid #ced4da;
+  font-size: 1.1em;
+  
 }
 
 /*Educacion Secundario*/
 .educacion {
-  background-color: #f8f9fa;
+  background-color: #343a40;
   padding: 30px;
   margin-top: 20px;
   border: 1px solid #dee2e6;
@@ -209,7 +218,7 @@ display: block;
 /*Aptitudes*/
 
 .seccionAptitudes {
-  background-color: #f8f9fa;
+  background-color: #6c757d;
   padding: 30px;
   margin-top: 20px;
   border: 1px solid #dee2e6;
@@ -229,8 +238,12 @@ display: block;
 
 .categoriaAptitudes .seccion {
   
-  width: 40em;
-  height: auto;
+  max-width: 40em;
+  min-width: 15em;
+  width: 10em;
+  max-height: 28em;
+  height: 0 auto;
+  
   /* Establece un ancho mínimo de 250px */
   padding: 20px;
   border-radius: 8px;
@@ -600,11 +613,9 @@ display: block;
  
 
 
-  @media(max-width: 1024px){
+ /* @media(max-width: 1024px){
     /* Estilos para tablets en modo horizontal y laptops pequeñas */
-  body{
-    
-  }
 
-  }
+/*
+  }*/
 }
