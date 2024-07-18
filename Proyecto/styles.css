@@ -8,39 +8,6 @@ body {
   color: #343a40;
 }
 
-
-
-/* Header */
-.header {
-  display: flex;
-  background-color: #343a40;
-  color: #f8f9fa;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.header nav {
-  margin-left: 1em;
-}
-
-.header a {
-  color: white;
-  text-decoration: none;
-  margin-left: 0.1em;
-}
-
-.header nav ul {
-  display: flex;
-  list-style-type: none;
-  gap: 1em;
-}
-
-.header nav ul li {
-  display: inline;
-  margin-right: 1em;
-}
-
 /* Sección Descripción del Proyecto */
 .descripcion-proyecto {
   background-color: #ffffff;
@@ -133,14 +100,7 @@ body {
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
-  /* Header*/
-  .header ul{
-    font-size: 0.6em;
-    gap: 0.1em;
-  }
   
-  /**/
-
 
   .listadoAptitudes {
     flex-direction: column;

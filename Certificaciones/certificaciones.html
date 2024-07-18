@@ -4,23 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_certificaciones.css">
+    <link rel="stylesheet" href="certificaciones.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Certificaciones</title>
     <script src="https://kit.fontawesome.com/7fe52845e8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
-        <header>
+         <!--header -->
+         <header class="header">
+            <!--Logo Inicio-->
             <a href="../index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
-            <nav>
+            <!--Nav para pc/tablet-->
+            <nav id="navPc">
                 <ul>
+                    <li><a href="../index.html"></a></li>
                     <li><a href="../ExperienciaLaboral/experienciaLaboral.html">Experiencia Laboral</a></li>
                     <li><a href="certificaciones.html">Certificaciones</a></li>
                     <li><a href="../Contacto/contacto.html">Contacto</a></li>
                     <li><a href="../Proyecto/proyecto.html">Sobre el Proyecto</a></li>
                 </ul>
             </nav>
+            <button onclick="desplegarMenu('navMovil')" class="menu" id="abrir"><i class="fa fa-chevron-down fa-2x"
+                    style="color:#ffffff;" aria-hidden="true"></i>
+            </button>
+            <!--Barra de navegacion movil-->
+            <nav id="navMovil">
+                <div class="movil">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../ExperienciaLaboral/experienciaLaboral.html">Experiencia Laboral</a></li>
+                        <li><a href="certificaciones.html">Certificaciones</a></li>
+                        <li><a href="../Contacto/contacto.html">Contacto</a></li>
+                        <li><a href="../Proyecto/proyecto.html">Sobre el Proyecto</a></li>
+                    </ul>
+                </div>
+                <div class="botonCerrar">
+                    <button onclick="desplegarMenu('navMovil')" id="cerrar">
+                        <i class="fa fa-chevron-up fa-2x" aria-hidden="true" style="color:#ffffff;"></i></i>
+                    </button>
+                </div>
+            </nav>
+            <!--Barra de navegacion movil-->
         </header>
 
         <main>
@@ -84,19 +110,20 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="container">
+            <div class="container1">
                 <h3>Creado por Matias Gonzalez</h3>
                 <p>Pagina creada con HTML, CSS y JS para Proyecto Final de Introducción a la Programación</p>
-            </div>
-            <div class="logos">
-                <ul>
-                    <li><i class="fa-brands fa-js" style="color:white;"></i></li>
-                    <li><i class="fa-brands fa-css3-alt" style="color:white;"></i></li>
-                    <li><i class="fa-brands fa-html5" style="color:white;"></i></li>
-                </ul>
+                <div class="logos">
+                    <ul>
+                        <li><i class="fa-brands fa-html5 fa-2xl" style="color:white;"></i></li>
+                        <li><i class="fa-brands fa-css3-alt fa-2xl" style="color:white;"></i></li>
+                        <li><i class="fa-brands fa-js fa-2xl" style="color:white;"></i></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>
+    <script src="../index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,88 @@
+/* Reset general */
+
+
+
+
+/* Estilos para la sección Certificaciones */
+.seccion1{
+    margin: 1em;
+}
+.certificados {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    /* Color de fondo para la sección de certificaciones */
+    gap: 1em;
+    /* Espacio entre certificaciones */
+    padding: 0.3em;
+    border-radius: 1.8em;
+    
+}
+
+.certificacion {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    /* Borde ligero */
+    padding: 0.6em;
+    max-width: 350px;
+    /* Ancho máximo de la certificación */
+    width: 100%;
+    /* Para ocupar el espacio disponible */
+    margin: 0.6em;
+    /* Espacio inferior entre certificaciones */
+    
+}
+
+.certificacion .nombre {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.certificacion .emisores {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espacio entre elementos */
+    margin-bottom: 10px;
+}
+
+.certificacion .emisor {
+    font-style: italic;
+    color: #666;
+}
+
+.certificacion .fecha {
+    color: #666;
+}
+
+.certificacion .Conocimientos {
+    line-height: 1.6;
+}
+
+
+@media (max-width :768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Seccion Certificaciones*/
+    .seccion1{
+        margin: 0.5em;
+    }
+    .certificados{
+        background-color: #eff0f3;
+        margin: 0;
+        
+
+    }
+    .seccion1 .certificacion{
+       padding: 1em;
+       background-color: #f8f9fa;
+       border-radius: 1.5em;
+       border: 1px solid #343a40;
+    }
+    
+}
