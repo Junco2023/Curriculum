@@ -1,4 +1,22 @@
 // index.js
+/* */
+document.addEventListener('DOMContentLoaded', function() {
+  const nav = document.getElementById('navPc');
+  const abrir = document.getElementById('abrir');
+  const cerrar = document.getElementById('cerrar');
+  const nav1=document.getElementById("navMovil");
+
+  desplegarMenu('navMovil')
+});
+function desplegarMenu(menu){
+  if(menu=='navMovil'){
+    var movil=document.getElementById('navMovil');
+    movil.style.display=(movil.style.display==='none')? 'block': 'none' ;
+    nav.classList.add('visible');
+  }
+}
+
+/* */
 
 document.addEventListener('DOMContentLoaded', function() {
   const btnGenerarFrase = document.getElementById('btn-generar');

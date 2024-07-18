@@ -7,3 +7,4 @@ function toggleSkills(tipo) {
         habilidadesBlandas.style.display = (habilidadesBlandas.style.display === 'none') ? 'block' : 'none';
     }
 }
+

@@ -1,25 +1,55 @@
-
 /* Estilos generales */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f8f9fa; /* Color de fondo principal */
-  color: #343a40; /* Color de texto principal */
+  background-color: #f8f9fa;
+  /* Color de fondo principal */
+  color: #343a40;
+  /* Color de texto principal */
+  height: 100%;
+}
+.header a:hover{
+  background-color: #6c757d;
+
+}
+/*.visible de Header Pc*/
+.container .header #navPc .visible{
+  display: none;
+}
+#abrir{
+  display:none;
+}
+/*Botones*/
+.container .header #cerrar,#abrir{
+  width: 3em;
+  height: 2em;
+  background: none;
+  border: none;
+}
+#abrir:hover{
+  background-color:#6c757d;
 }
 
+/*Fin botones**/
 /* Header */
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0em;
+  z-index: 1000;
+}
 .header {
-  display: flex ;
-  background-color: #343a40; /* Color de fondo para el encabezado */
+  display: flex;
+  background-color: #343a40;
+  /* Color de fondo para el encabezado */
   color: white;
   padding: 10px 10px;
   align-items: center;
   justify-content: space-between;
-  
-}
 
+}
 .header a {
   color: white;
   text-decoration: none;
@@ -30,38 +60,49 @@ body {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-
 }
-
-
 .header nav ul li {
   display: inline;
   margin-right: 20px;
 }
 
-/* Sección Acerca de mí */
+/*Nav para menu movil ---------------------------------------------- */
+#navMovil,.botonCerrar #cerrar .visible{
+display: none;
+}
+#navMovil {
+  display: none;
+}
+/*Fin nav Movil*/
+/******/
+
+/* Sección Acerca de mí---------------------------------------------- */
 .section-about {
   display: flex;
-  background-color: #ffffff; /* Color de fondo para la sección Acerca de mí */
+  background-color: #ffffff;
+  /* Color de fondo para la sección Acerca de mí */
   padding: 50px;
   margin-top: 20px;
-  border: 1px solid #e9ecef; /* Borde ligero */
+  border: 1px solid #e9ecef;
+  /* Borde ligero */
   text-align: center;
 }
 
 /*Acerca de Mi texto  */
-.section-about .acerca-de{
+.section-about .acerca-de {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
 }
 
 .section-about h2 {
-  color: #343a40; /* Color de texto principal */
+  color: #343a40;
+  /* Color de texto principal */
 }
 
 .section-about p {
-  color: #6c757d; /* Color de texto secundario */
+  color: #6c757d;
+  /* Color de texto secundario */
 }
 
 .section-about img {
@@ -72,7 +113,7 @@ body {
 }
 
 /* Sección Información Personal */
-.section-personal-info{
+.section-personal-info {
   border: 2px solid black;
   display: flex;
   align-items: center;
@@ -83,21 +124,24 @@ body {
 .datos {
   width: 300px;
   height: 160px;
-  background-color: #f1f8ff; /* Color de fondo para la sección Información Personal */
+  background-color: #f1f8ff;
+  /* Color de fondo para la sección Información Personal */
   padding: 30px;
   margin: 20px;
-  border: 2px solid #d0e3ff; /* Borde ligero */
+  border: 2px solid #d0e3ff;
+  /* Borde ligero */
   position: relative;
 }
 
 .datos h3 {
   position: absolute;
   top: -40px;
-  left:35px;
+  left: 35px;
   padding: 5px 10px;
   border: 2px solid #d0e3ff;
   background-color: #f1f8ff;
-  color: #343a40; /* Color de texto principal */
+  color: #343a40;
+  /* Color de texto principal */
 }
 
 .section-personal-info ul {
@@ -111,144 +155,217 @@ body {
 }
 
 .section-personal-info ul li a {
-  color: #007bff; /* Color de enlace para los enlaces de Información Personal */
+  color: #007bff;
+  /* Color de enlace para los enlaces de Información Personal */
 }
-.section-personal-info .redes{
+
+.section-personal-info .redes {
   display: flex;
   flex-wrap: wrap;
   margin: 30px;
-  
+
 }
-.section-personal-info  #redes {
+
+.section-personal-info #redes {
   display: flex;
   gap: 2em;
 }
 
 
 /*Aptitudes*/
-.aptitudes{
-  
+.aptitudes {
+
   background-color: #f8f9fa;
   padding: 30px;
   margin-top: 20px;
   border: 1px solid #dee2e6;
 }
-.aptitudes h3{
+
+.aptitudes h3 {
   color: #343a40;
 }
-.aptitudes ul{
+
+.aptitudes ul {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   align-items: center;
   gap: 2.0em;
   justify-content: flex-start;
   background-color: #f8f9fa;
   border: 1px solid #ced4da;
 }
+
 /*Educacion Secundario*/
-.educacion{
+.educacion {
   background-color: #f8f9fa;
   padding: 30px;
   margin-top: 20px;
   border: 1px solid #dee2e6;
 }
-.educacion h3{
-color:#343a40
+
+.educacion h3 {
+  color: #343a40
 }
+
 /*Programas*/
-.programas{
+.programas {
   background-color: #f8f9fa;
   padding: 30px;
   margin-top: 20px;
   border: 1px solid #dee2e6;
-  
+
 }
 
 .categoriasProgramas {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Espacio entre las secciones */
+  gap: 20px;
+  /* Espacio entre las secciones */
   background-color: #f9f9f9;
-  padding: 20px; /* Añade un poco de relleno al contenedor */
+  padding: 20px;
+  /* Añade un poco de relleno al contenedor */
 }
 
 .seccion {
-  flex: 1 0 200px; /* Establece un ancho mínimo de 250px */
+  flex: 1 0 200px;
+  /* Establece un ancho mínimo de 250px */
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #343a40;
-  margin-bottom: 20px; /* Espacio entre las secciones */
+  margin-bottom: 20px;
+  /* Espacio entre las secciones */
 }
 
 /* Sección Experiencia Laboral */
 .section-experience {
-  background-color: #f8f9fa; /* Color de fondo para la sección Experiencia Laboral */
+  background-color: #f8f9fa;
+  /* Color de fondo para la sección Experiencia Laboral */
   padding: 30px;
   margin-top: 20px;
-  border: 1px solid #dee2e6; /* Borde ligero */
+  border: 1px solid #dee2e6;
+  /* Borde ligero */
 }
 
 .section-experience h3 {
-  color: #343a40; /* Color de texto principal */
+  color: #343a40;
+  /* Color de texto principal */
 }
 
 .section-experience .experience {
-  background-color: #ffffff; /* Color de fondo para cada experiencia */
+  background-color: #ffffff;
+  /* Color de fondo para cada experiencia */
   padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid #ced4da; /* Borde ligero */
+  border: 1px solid #ced4da;
+  /* Borde ligero */
 }
 
 .section-experience .experience .details .position {
-  color: #343a40; /* Color de texto principal */
+  color: #343a40;
+  /* Color de texto principal */
 }
 
 .section-experience .experience .details .date {
-  color: #6c757d; /* Color de texto secundario */
+  color: #6c757d;
+  /* Color de texto secundario */
 }
 
 .section-experience .experience .details .location {
-  color: #6c757d; /* Color de texto secundario */
+  color: #6c757d;
+  /* Color de texto secundario */
 }
 
 .section-experience .experience .description {
-  color: #495057; /* Color de texto para la descripción */
+  color: #495057;
+  /* Color de texto para la descripción */
 }
 
 /* Sección Certificaciones */
 .section-certifications {
-  background-color: #f1f1f1; /* Color de fondo para la sección Certificaciones */
+  background-color: #f1f1f1;
+  /* Color de fondo para la sección Certificaciones */
   padding: 30px;
   margin-top: 20px;
-  border: 1px solid #ccc; /* Borde ligero */
+  border: 1px solid #ccc;
+  /* Borde ligero */
 }
 
 .section-certifications h3 {
-  color: #333; /* Color de texto principal */
+  color: #333;
+  /* Color de texto principal */
 }
 
 .section-certifications .certification {
-  background-color: #ffffff; /* Color de fondo para cada certificación */
+  background-color: #ffffff;
+  /* Color de fondo para cada certificación */
   padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid #ccc; /* Borde ligero */
+  border: 1px solid #ccc;
+  /* Borde ligero */
 }
 
 .section-certifications .certification .name {
-  color: #343a40; /* Color de texto principal */
+  color: #343a40;
+  /* Color de texto principal */
 }
 
 .section-certifications .certification .issuer {
-  color: #6c757d; /* Color de texto secundario */
+  color: #6c757d;
+  /* Color de texto secundario */
 }
 
 .section-certifications .certification .details {
-  color: #495057; /* Color de texto para los detalles */
+  color: #495057;
+  /* Color de texto para los detalles */
 }
+
+
+/* Estilos adicionales */
+.aleatorio {
+  display: block;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+/* Estilos para la sección de descripción del proyecto */
+.seccion-descripcionProyecto {
+  background-color: #ffffff;
+  /* Fondo blanco para resaltar la sección */
+  padding: 20px;
+  /* Espaciado interno para un diseño limpio */
+  margin-top: 20px;
+  /* Espaciado superior para separación de otras secciones */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra ligera para profundidad */
+  border-radius: 8px;
+  /* Bordes redondeados para un diseño moderno */
+}
+
+.descripcion {
+  background-color: #f9f9f9;
+  /* Fondo claro para el contenido interno */
+  padding: 10px;
+  /* Espaciado interno */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  /* Sombra ligera */
+}
+
+.proyecto {
+  font-size: 1.1rem;
+  /* Tamaño de fuente para buena legibilidad */
+  line-height: 1.6;
+  /* Altura de línea para espacio entre líneas */
+  color: #555;
+  /* Color de texto para buen contraste */
+}
+
 
 /* Footer */
 .footer {
-  background-color: #343a40; /* Color de fondo para el pie de página */
+  background-color: #343a40;
+  /* Color de fondo para el pie de página */
   color: white;
   text-align: center;
   padding: 20px;
@@ -259,61 +376,38 @@ color:#343a40
 }
 
 .footer a {
-  color: #ffffff; /* Color de enlace para el pie de página */
+  color: #ffffff;
+  /* Color de enlace para el pie de página */
   text-decoration: none;
 }
-   /*Logo footer*/
-.footer .logos ul{
+
+/*Logo footer*/
+.footer .logos ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style: none;
   width: 80%;
 }
-/* Estilos adicionales */
-.aleatorio {
-  display: block;
-  background-color: aquamarine;
-  padding: 20px;
-}
-
-/* Estilos para la sección de descripción del proyecto */
-.seccion-descripcionProyecto {
-  background-color: #ffffff; /* Fondo blanco para resaltar la sección */
-  padding: 20px; /* Espaciado interno para un diseño limpio */
-  margin-top: 20px; /* Espaciado superior para separación de otras secciones */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
-  border-radius: 8px; /* Bordes redondeados para un diseño moderno */
-}
-
-.descripcion {
-  background-color: #f9f9f9; /* Fondo claro para el contenido interno */
-  padding: 10px; /* Espaciado interno */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-}
-
-.proyecto {
-  font-size: 1.1rem; /* Tamaño de fuente para buena legibilidad */
-  line-height: 1.6; /* Altura de línea para espacio entre líneas */
-  color: #555; /* Color de texto para buen contraste */
-}
 
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
-   /* Estilos para tablets en modo vertical y smartphones en modo horizontal */
-  body{
+
+  /* Estilos para tablets en modo vertical y smartphones en modo horizontal */
+  body {
     background-color: #495057;
     margin: 0;
     padding: 0;
   }
+
   /*Acerca de mi*/
-  .section-about{
+  .section-about {
     padding: 1em;
     align-items: center;
-   
+
   }
+
   .section-about .acerca-de {
     background-color: #f8f9fa;
     border-radius: 2em;
@@ -321,92 +415,187 @@ color:#343a40
     margin: 0em 1em 1em 0em;
 
   }
-  
+
   /*Seccion Datos Personales y Estudios */
 
 
-  .section-personal-info{
+  .section-personal-info {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
   }
 
-  .datos{
+  .datos {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
   }
+
   .datos h3 {
     position: absolute;
     top: -40px;
-    left:30px;
+    left: 30px;
     padding: 5px 10px;
     border: 2px solid #d0e3ff;
     background-color: #f1f8ff;
-    color: #343a40; /* Color de texto principal */
+    color: #343a40;
+    /* Color de texto principal */
   }
+
   /*Seccion Programas*/
-.categoriasProgramas {
-  gap: 20px; /* Espacio entre las secciones */
-  background-color: #f9f9f9;
-  padding: 20px; /* Añade un poco de relleno al contenedor */
-}
-
-.seccion {
-  flex: 1 0 150px; /* Establece un ancho mínimo de 250px */
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #343a40;
-  margin-bottom: 20px; /* Espacio entre las secciones */
-}
-  
-  
-}
-/**/
-@media(max-width:575.98px){
-  body{
-    background-color: red;
+  .categoriasProgramas {
+    gap: 20px;
+    /* Espacio entre las secciones */
+    background-color: #f9f9f9;
+    padding: 20px;
+    /* Añade un poco de relleno al contenedor */
   }
-/*Seccion Acerca de mi */
- .section-about{
-  display: block;
- }
 
-.container nav{
-  margin-left: 5em;
-  font-size: 0.6em;
+  .seccion {
+    flex: 1 0 150px;
+    /* Establece un ancho mínimo de 250px */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #343a40;
+    margin-bottom: 20px;
+    /* Espacio entre las secciones */
+  }
+
+
 }
+
+/**/
+@media(max-width:575.98px) {
+  body {
+    background-color:#6c757d;
+  }
+
+  /*hacemos visible los botones*/
+  .header #navPc {
+    display: none;    
+  }
+.header #abrir, #cerrar{
+  display: block;
+}
+  /*Seccion Acerca de mi */
+  .section-about {
+    display: block;
+  }
+
+  .container nav {
+    margin-left: 5em;
+    font-size: 0.6em;
+  }
+  
+
+  .header #cerrar {
+    display: block;
+  }
+/*Nav para menu movil*/
+.header  #abrir{
+  margin-right: 1em;
+  
+}
+.header #navMovil{
+    
+    display: block;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 5.9%;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    z-index: 1000;
+    
+  }
+
+#navMovil .movil{
+  display: block;
+  width: 100%;
+}
+  .header #navMovil .movil ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: x-large;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+ /*Boton cerrar*/
+ 
+  .header #navMovil  #cerrar {
+    position: fixed;
+    top: 51.1em;
+    border: 2px solid #333;
+    width: 100%;
+  }
+  #navMovil #cerrar:hover{
+    background-color: #333;
+  }
+
+.header #navMovil .movil ul li:hover{
+  position: relative;
+  top: 0.4em;
+  border-bottom: 4px solid #333;
+}
+
+
+.header #navMovil .movil ul li a{
+    width: 100%;
+   
+  }
+  #navMovil .visible {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    
+  }
+
   /*Secion Informacion Personal*/
-  .section-personal-info{
+  .section-personal-info {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #f9f9f9;
-    
+
   }
-  .datos{
+
+  .datos {
     width: 75%;
   }
+
   /*programas*/
-.categoriasProgramas {
-  gap: 20px; /* Espacio entre las secciones */
-  background-color: #f9f9f9;
-  padding: 20px; /* Añade un poco de relleno al contenedor */
-}
+  .categoriasProgramas {
+    gap: 20px;
+    /* Espacio entre las secciones */
+    background-color: #f9f9f9;
+    padding: 20px;
+    /* Añade un poco de relleno al contenedor */
+  }
 
-.seccion {
-  flex: 1 0 120px; /* Establece un ancho mínimo de 250px */
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #343a40;
-  margin-bottom: 20px; /* Espacio entre las secciones */
-}
+  .seccion {
+    flex: 1 0 120px;
+    /* Establece un ancho mínimo de 250px */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #343a40;
+    margin-bottom: 20px;
+    /* Espacio entre las secciones */
+  }
+
+ 
 
 
+  @media(max-width: 1024px){
+    /* Estilos para tablets en modo horizontal y laptops pequeñas */
+  body{
+    background-color: #ccc;
+  }
 
-
-@media (max-width: 1024px) {
-  /* Estilos para tablets en modo horizontal y laptops pequeñas */
+  }
 }
