@@ -67,8 +67,8 @@ body {
 }
 
 /*Nav para menu movil ---------------------------------------------- */
-#navMovil,.botonCerrar #cerrar .visible{
-display: none;
+#navMovil,.botonCerrar #cerrar  .visible{
+display: block;
 }
 #navMovil {
   display: none;
@@ -206,9 +206,9 @@ display: none;
 .educacion h3 {
   color: #343a40
 }
+/*Aptitudes*/
 
-/*Programas*/
-.programas {
+.seccionAptitudes {
   background-color: #f8f9fa;
   padding: 30px;
   margin-top: 20px;
@@ -216,18 +216,21 @@ display: none;
 
 }
 
-.categoriasProgramas {
+.categoriaAptitudes {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-around;
+  gap: 1em;
   /* Espacio entre las secciones */
   background-color: #f9f9f9;
-  padding: 20px;
+  padding: 1em;
   /* Añade un poco de relleno al contenedor */
 }
 
-.seccion {
-  flex: 1 0 200px;
+.categoriaAptitudes .seccion {
+  
+  width: 40em;
+  height: auto;
   /* Establece un ancho mínimo de 250px */
   padding: 20px;
   border-radius: 8px;
@@ -476,7 +479,7 @@ display: none;
   .header #navPc {
     display: none;    
   }
-.header #abrir, #cerrar{
+.header #abrir, .botonCerrar #cerrar{
   display: block;
 }
   /*Seccion Acerca de mi */
@@ -505,11 +508,12 @@ display: none;
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 6.9%;
+    top: 6%;
     right: 0;
     bottom: 0;
     background-color: grey;
     z-index: 1000;
+    transition: linear;
     
   }
 
@@ -530,7 +534,7 @@ display: none;
  
   .header #navMovil  #cerrar {
     position: fixed;
-    top: 51.1em;
+    top: 96.4%;
     border: 2px solid #333;
     width: 100%;
   }
@@ -577,15 +581,20 @@ display: none;
     padding: 20px;
     /* Añade un poco de relleno al contenedor */
   }
-
-  .seccion {
-    flex: 1 0 120px;
-    /* Establece un ancho mínimo de 250px */
-    padding: 20px;
+ .categoriaAptitudes{
+  display: flex;
+  
+ }
+   .categoriaAptitudes .seccion {
+   
+    max-width: 90%;
+    width: 60%;
+    height: auto;
     border-radius: 8px;
     border: 1px solid #343a40;
     margin-bottom: 20px;
     /* Espacio entre las secciones */
+    
   }
 
  
@@ -594,7 +603,7 @@ display: none;
   @media(max-width: 1024px){
     /* Estilos para tablets en modo horizontal y laptops pequeñas */
   body{
-    background-color: #ccc;
+    
   }
 
   }
