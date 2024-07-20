@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <title>Curriculum</title>
     <script src="https://kit.fontawesome.com/7fe52845e8.js" crossorigin="anonymous"></script>
-
-
 </head>
+<!---->
 
 <body>
     <!--Contenedor principal-->
@@ -28,7 +27,7 @@
                 </ul>
             </nav>
             <button onclick="desplegarMenu('navMovil')" class="menu" id="abrir"><i class="fa fa-chevron-down fa-2x"
-                    style="color:#ffffff;" aria-hidden="true"></i>
+                    style="color:#f8f9fa;" aria-hidden="true"></i>
             </button>
             <!--Barra de navegacion movil-->
             <nav id="navMovil">
@@ -43,7 +42,7 @@
                 </div>
                 <div class="botonCerrar">
                     <button onclick="desplegarMenu('navMovil')" id="cerrar">
-                        <i class="fa fa-chevron-up fa-2x" aria-hidden="true" style="color:#ffffff;"></i></i>
+                        <i class="fa fa-chevron-up fa-2x" aria-hidden="true" style="color:#f8f9fa;"></i></i>
                     </button>
                 </div>
             </nav>
@@ -52,6 +51,9 @@
 
         <main class="main">
             <section class="section-about">
+                <div class="foto">
+                    <img src="imagenes/FotoPersonal.jpg" alt="imagen-personal">
+                </div>
                 <div class="acerca-de">
                     <h2>Acerca de mí</h2>
                     <p>Soy un desarrollador Java Full Stack con conocimientos en desarrollo de aplicaciones web y
@@ -61,29 +63,25 @@
                         adaptarme eficazmente a nuevos desafíos. Estoy entusiasmado por comenzar mi carrera profesional
                         en un entorno dinámico donde pueda colaborar en equipos innovadores, aportar creatividad y
                         seguir creciendo profesionalmente</p>
-
-                </div>
-                <div class="foto">
-                    <img src="imagenes/FotoPersonal.jpg" alt="imagen-personal">
                 </div>
             </section>
-
-            <section class="section-personal-info">
+            <!---->
+            <section class="seccionPersonalInfo">
                 <section class="datos">
                     <h3>Información Personal</h3>
                     <section class="datosPersonales">
                         <ul>
                             <li><i class="fa fa-envelope" aria-hidden="true"></i><a
-                                    href="mailto:gonzalezmatias6164@gmail.com">gonzalezmatias6164@gmail.com</a></li>
+                                    href="mailto:gonzalezmatias6164@gmail.com"> gonzalezmatias6164@gmail.com</a></li>
                             <li>Argentina, Lomas de Zamora</li>
-                            <li>28 años</li>
+                            <li>29 años</li>
                         </ul>
                         <div class="Redes">
                             <ul id="redes">
                                 <li><a href="https://www.linkedin.com/in/matias-gonzalez-29344b267"><i
-                                            class="fa-brands fa-linkedin" style="color: #343a40;"></i>linkedin</a>
+                                            class="fa-brands fa-linkedin " style="color: #343a40;"></i> Linkedin</a>
                                 </li>
-                                <li><a href="#"><i class="fa-brands fa-github" style="color:#343a40"></i>GitHub</a>
+                                <li><a href="#"><i class="fa-brands fa-github " style="color:#343a40"></i> GitHub</a>
                                 </li>
                             </ul>
                         </div>
@@ -93,16 +91,16 @@
                     <h3>Estudios</h3>
                     <article id="secundario1">
                         <h4>Cens 455 -Secundario</h4>
-                        <p><strong>Titulo Obtenido :</strong> Bachiller en Gestion y Administracion especializado
-                            en
-                            Administracion de Personal</p>
-
+                        <p><strong>Titulo Obtenido :</strong> </p>
+                        <p>Bachiller en Gestion y Administracion especializado
+                            en Administracion de Personal
+                        </p>
                     </article>
                 </section>
 
             </section>
 
-            <section class="aptitudes">
+            <section class="aptitudesDestacadas">
                 <h3>Tecnologías y Aptitudes en Desarrollo de Aplicaciones y Paginas web</h3>
                 <ul>
                     <li>Java</li>
@@ -118,8 +116,8 @@
             <section class="seccionAptitudes">
                 <h2>Perfil y Habilidades</h2>
                 <div class="categoriaAptitudes">
-                    <div class="seccion">
-                        <h4>Programación</h4>
+                    <div class="seccionPorCategoria">
+                        <h3>Programación</h3>
                         <ul>
                             <li>Desarrollo de aplicaciones web y escritorio en Java (JDBC, Swing)</li>
                             <li>Manejo de bases de datos MariaDB (MySQL)</li>
@@ -128,9 +126,9 @@
                             <li>Uso de IDEs como NetBeans, Visual Studio y Processing</li>
                         </ul>
                     </div>
-                   
-                    <div class="seccion">
-                        <h4>Administración y Gestión</h4>
+
+                    <div class="seccionPorCategoria">
+                        <h3>Administración y Gestión</h3>
                         <ul>
                             <li>Gestión de inventarios y optimización de procesos</li>
                             <li>Generación de informes y análisis de datos</li>
@@ -138,16 +136,16 @@
                             <li>Manejo de sistemas de gestión empresarial</li>
                         </ul>
                     </div>
-                    <div class="seccion">
-                        <h4>eCommerce y Plataformas de Venta Online</h4>
+                    <div class="seccionPorCategoria">
+                        <h3>eCommerce y Plataformas de Venta Online</h3>
                         <ul>
                             <li>MercadoLibre (gestión de productos)</li>
                             <li>Estrategias de venta online</li>
                             <li>Integración de pagos electrónicos</li>
                         </ul>
                     </div>
-                    <div class="seccion">
-                        <h4>Habilidades Personales</h4>
+                    <div class="seccionPorCategoria">
+                        <h3>Habilidades Personales</h3>
                         <ul>
                             <li>Capacidad de trabajo en equipo</li>
                             <li>Resolución de problemas de manera efectiva</li>
@@ -156,30 +154,36 @@
                             <li>Capacidad de concentración</li>
                         </ul>
                     </div>
-                    <div class="seccion">
-                        <h4>Control de versiones y herramientas</h4>
+                    <div class="seccionPorCategoria">
+                        <h3>Control de versiones y herramientas</h3>
                         <ul>
                             <li>Control de versiones con GitHub y Git GUI</li>
                         </ul>
                     </div>
-                    
+
                 </div>
 
 
             </section>
-
-            <section class="section-experience">
-                <div class="container">
-                    <h3>Experiencia Laboral</h3>
-                </div>
+            <!---->
+            <section class="redireccion">
+                <section class="seccionExperiencia">
+                    <div class="subtitulo">
+                        <a href="ExperienciaLaboral/experienciaLaboral.html">
+                            <h2>Experiencia Laboral</h2>
+                        </a>
+                    </div>
+                </section>
+                <section class="seccionCertificaciones">
+                    <div class="subtitulo">
+                        <a href="Certificaciones/certificaciones.html">
+                            <h2>Certificaciones</h2>
+                        </a>
+                    </div>
+                </section>
             </section>
-
-            <section class="section-certifications">
-                <div class="container">
-                    <h3>Certificaciones</h3>
-                </div>
-            </section>
-            <section class="seccion-descripcionProyecto">
+            <!---->
+            <section class="seccionDescripcionProyecto">
                 <div class="descripcion">
                     <p class="proyecto">En este proyecto desarrollé una aplicación web completa utilizando tecnologías
                         como
@@ -187,22 +191,54 @@
                         diversos
                         dispositivos y mejoré la experiencia del usuario (UX) con interfaces intuitivas. También
                         gestioné la
-                        base de datos utilizando MySQL y aseguré una arquitectura de código limpio y eficiente.</p>
+                        base de datos utilizando MySQL y aseguré una arquitectura de código limpio y eficiente .
+                        <a href="Proyecto/proyecto.html">Ver mas detalles</a>
+                    </p>
+
                 </div>
             </section>
+            <!---->
         </main>
-
+        <!---->
         <footer class="footer">
-            <div class="container">
-                <h3>Creado por Matias Gonzalez</h3>
-                <p>Pagina creada con HTML, CSS y JS para Proyecto Final de Introducción a la Programación</p>
-                <div class="logos">
-                    <ul>
-                        <li><i class="fa-brands fa-html5 fa-2xl" style="color:white;"></i></li>
-                        <li><i class="fa-brands fa-css3-alt fa-2xl" style="color:white;"></i></li>
-                        <li><i class="fa-brands fa-js fa-2xl" style="color:white;"></i></li>
-                    </ul>
+            <div class="contenedorFooter">
+                <div class="footerDetalles">
+                    <article >
+                        <ul id="links">
+                            <li><a href="http://"><strong>Inicio</strong></a></li>
+                            <li><a href="http://"><strong>Experiencia Laboral</strong></a></li>
+                            <li><a href="http://"><strong>Certificaciones</strong></a></li>
+                            <li><a href="http://"><strong>Contacto</strong></a></li>
+                            <li><a href="http://"><strong>Sobre el Proyecto</strong></a></li>
+                        </ul>
+                    </article>
+                   
+                    <article id="atribucionIconos" >
+                        <h3>Iconos utilizados para el proyecto :</h3>
+                        <ul id="atribucion">
+                            <li><a href="">fontawesome</a></li>
+                            <li><a href="">Flaticon</a></li>
+                        </ul>
+                    </article>
+                    <article >
+                        <div class="informacion">
+                            <h3>Proyecto Final de Introducción a la Programación</h3>
+                            <h3>Creado por Matias Gonzalez con :</h3>
+                            <div class="logos">
+                                <ul>
+                                    <li><i class="fa-brands fa-html5 fa-2xl" style="color:white;"></i></li>
+                                    <li><i class="fa-brands fa-css3-alt fa-2xl" style="color:white;"></i></li>
+                                    <li><i class="fa-brands fa-js fa-2xl" style="color:white;"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                   
                 </div>
+                <div class="copy">
+                    <h3> &copy; 2024 Matías González. Todos los derechos reservados. Este currículum fue realizado como proyecto final del curso de Introducción a la Programación.</h3> 
+                </div>
+
             </div>
         </footer>
     </div>

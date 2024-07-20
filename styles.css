@@ -4,7 +4,7 @@ PALETA DE COLORES DE OSCURO A CLARO
 #a0909b  ALTO-BAJO
 #b3a2ae  MEDIO
 #c5b4c0  MEDIO-BAJO
-#d7c6d2  BAJO
+#f8f9fa  BAJO blanco
 /*/
 /* Estilos generales */
 body {
@@ -15,217 +15,266 @@ body {
   background-color: #f8f9fa;
   /* Color de fondo principal */
   color: #343a40;
+  /* Letras */
   /* Color de texto principal */
   height: 100%;
 }
-.header a:hover{
-  background-color: #6c757d;
 
+body p {
+  color: #343a40;
 }
+
+
 /*.visible de Header Pc*/
-.container .header #navPc .visible{
+.container .header #navPc .visible {
   display: none;
 }
-#abrir{
-  display:none;
-}
+
 /*Botones*/
-.container .header #cerrar,#abrir{
+#abrir {
+  display: none;
+}
+
+.container .header #cerrar,
+#abrir {
   width: 3em;
   height: 2em;
   background: none;
   border: none;
 }
-#abrir:hover{
-  background-color:#6c757d;
+
+#abrir:hover {
+  background-color: #6c757d;
 }
 
 /*Fin botones**/
+
 /* Header */
-.header{
+.header a:hover {
+  background-color: #5b6874;
+}
+
+/*Header/Controla la posicion*/
+.header {
   width: 100%;
   position: fixed;
   top: 0em;
   z-index: 1000;
 }
+
 .header {
   display: flex;
   background-color: #343a40;
   /* Color de fondo para el encabezado */
-  color: white;
-  padding: 10px 10px;
+  padding: 0.5em;
   align-items: center;
   justify-content: space-between;
-
 }
+
 .header a {
-  color: white;
+  /*Links */
+  color: #f8f9fa;
   text-decoration: none;
 }
+
 .container .header nav ul {
+  /*Barra de nav*/
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: flex-end;
-}
-.header nav ul li {
-  display: inline;
-  margin-right: 20px;
+  align-items: center;
+  margin-right: 2em;
+  gap: 1em;
 }
 
-/*Nav para menu movil ---------------------------------------------- */
-#navMovil,.botonCerrar #cerrar  .visible{
-display: block;
+.header nav ul li a {
+  /*Linkd de .header/nav*/
+  padding: 0em 1em 0em 1em;
+  font-size: medium;
 }
+
+/*-----------MOVIL--------------*/
+/*Nav para menu movil ---------------------------------------------- */
+#navMovil,
+.botonCerrar #cerrar .visible {
+  display: block;
+}
+
 #navMovil {
   display: none;
 }
+
 /*Fin nav Movil*/
 /******/
 
+/*------------------  MAIN---------------*/
+.main {
+  margin-top: 2.6em;
+  padding-top: 1em;
+  padding-left: 0em;
+  padding-right: 0em;
+  align-content: center;
+}
+
 /* Sección Acerca de mí---------------------------------------------- */
-.section-about {
+.main .section-about {
   display: flex;
-  background-color: #ffffff;
+  flex-wrap: wrap;
+  background-color: #f8f9fa;
   /* Color de fondo para la sección Acerca de mí */
-  padding: 50px;
-  margin-top: 20px;
-  border: 1px solid #e9ecef;
+  padding: 1em;
+  margin-top: 0em;
   /* Borde ligero */
   text-align: center;
+  /* Sombra ligera */
+
 }
 
-/*Acerca de Mi texto  */
-.section-about .acerca-de {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
+/*Dentro de section-about*/
+/*Foto Perdil*/
+.main .section-about .foto {
+  padding: 0em 1em 0em 1em;
 }
 
-.section-about h2 {
-  color: #343a40;
-  /* Color de texto principal */
-}
-
-.section-about p {
-  color: #6c757d;
-  /* Color de texto secundario */
-}
-
-.section-about img {
+.main .section-about .foto img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   margin-top: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
 
+/*Acerca de mi, texto  */
+.section-about .acerca-de {
+  max-width: 80%;
+  margin-left: 2em;
+  padding: 1.5em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  /* Sombra ligera */
+}
+
+.section-about h2 {
+  margin-top: 0;
+}
+
+.section-about p {
+  font-size: medium;
+}
+
+/*fin de section-about*/
+/**/
 /* Sección Información Personal */
-.section-personal-info {
+.seccionPersonalInfo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin: 10px;
+  margin: 1em;
 }
 
-.datos {
-  width: 300px;
-  height: 160px;
-  background-color: #343a40f;
+/* Tarjetas */
+.seccionPersonalInfo .datos {
+  max-width: 40%;
+  min-height: 200px;
+  width: 40%;
+  background-color: #f8f9fa;
   /* Color de fondo para la sección Información Personal */
   padding: 30px;
   margin: 20px;
-  border: 2px solid #343a40;
-  /* Borde ligero */
+  background-color: #d1d1d1;
   position: relative;
+  box-shadow: 0 0 5px #343a40;
 }
 
-.datos h3 {
+/*Titulo de tarjeta */
+.seccionPersonalInfo .datos h3 {
   position: absolute;
-  top: -40px;
-  left: 35px;
-  padding: 5px 10px;
-  border: 2px solid #343a40;
-  background-color: #f1f8ff;
-  color: #343a40;
-  /* Color de texto principal */
+  top: -2em;
+  left: 1.6em;
+  padding: 0.5em 1em;
+  background-color: #d1d1d1;
+  box-shadow: 0 0 5px #343a40;
 }
 
-.section-personal-info ul {
+.seccionPersonalInfo ul {
   list-style: none;
   padding: 0;
+
 }
 
-.section-personal-info ul li {
+.seccionPersonalInfo ul li {
   margin: 0px;
   margin-bottom: 10px;
 }
 
-.section-personal-info ul li a {
-  color: #007bff;
+.seccionPersonalInfo ul li a {
+  color: #343a40;
   /* Color de enlace para los enlaces de Información Personal */
 }
 
-.section-personal-info .redes {
+.seccionPersonalInfo .redes {
   display: flex;
   flex-wrap: wrap;
   margin: 30px;
-
 }
 
-.section-personal-info #redes {
+.seccionPersonalInfo .datos .datosPersonales,
+#secundario1 {
+  font-size: 1.3em;
+}
+
+.seccionPersonalInfo #redes {
   display: flex;
+  flex-wrap: wrap;
   gap: 2em;
 }
 
-
-/*Aptitudes*/
-.aptitudes {
-
+/*Fin section-personal-info*/
+/*aptitudesDescatadas*/
+.aptitudesDestacadas {
   background-color: #f8f9fa;
-  padding: 30px;
-  margin-top: 20px;
-  
+  padding: 1em;
+  box-shadow: 0 0 5px #343a40;
 }
 
-.aptitudes h3 {
-  color: #343a40;
+/*Titulo aptitudes*/
+.aptitudesDestacadas h3 {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
-.aptitudes ul {
+/*Lista de aptitudes*/
+.aptitudesDestacadas ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2.0em;
-  justify-content: flex-start;
+  gap: 2em;
+  justify-content: space-around;
   background-color: #f8f9fa;
   font-size: 1.1em;
-  
+  box-shadow:0 0 20px #343a40;
+  padding: 1em;
 }
 
-/*Educacion Secundario*/
-.educacion {
-  background-color: #343a40;
-  padding: 30px;
-  margin-top: 20px;
-  border: 1px solid #dee2e6;
-}
-
-.educacion h3 {
-  color: #343a40
-}
-/*Aptitudes*/
-
+/*Fin aptitudesDestacadas*/
+/**/
+/*Seccion de Aptitudes por categorias*/
+/*Contenedor */
 .seccionAptitudes {
-  background-color: #6c757d;
-  padding: 30px;
-  margin-top: 20px;
-  border: 1px solid #dee2e6;
-
+  background-color: #f8f9fa;
+  padding: 1em;
+  margin-top: 1em;
+  box-shadow: 0 0 5px #343a40;
 }
 
-.categoriaAptitudes {
+/*H2 titulo de seccion*/
+.seccionAptitudes h2 {
+  margin-top: 0;
+}
+
+/*Contenedor de aptitudes por cantegoria*/
+.seccionAptitudes .categoriaAptitudes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -236,14 +285,13 @@ display: block;
   /* Añade un poco de relleno al contenedor */
 }
 
-.categoriaAptitudes .seccion {
-  
+/*Seccion individual de aptitudes*/
+.seccionAptitudes .categoriaAptitudes .seccionPorCategoria {
   max-width: 40em;
   min-width: 15em;
   width: 10em;
   max-height: 28em;
   height: 0 auto;
-  
   /* Establece un ancho mínimo de 250px */
   padding: 20px;
   border-radius: 8px;
@@ -252,167 +300,242 @@ display: block;
   /* Espacio entre las secciones */
 }
 
-/* Sección Experiencia Laboral */
-.section-experience {
+/*Titulo de Secciones por categoria*/
+.seccionAptitudes .categoriaAptitudes .seccionPorCategoria h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #343a40;
+}
+
+/*Lista de descripcion de aptitudes*/
+.seccionAptitudes .categoriaAptitudes .seccionPorCategoria ul {
+  display: block;
+  margin: 1em;
+  padding: 0;
+}
+
+/*Fin de seccionAptitudes  por Categoria*/
+/**/
+
+/* Sección Experiencia Laboral y certificaciones*/
+/*Experiencia Laboral*/
+.redireccion {
   background-color: #f8f9fa;
   /* Color de fondo para la sección Experiencia Laboral */
-  padding: 30px;
-  margin-top: 20px;
-  border: 1px solid #dee2e6;
-  /* Borde ligero */
+  padding: 0em;
+  margin-top: 1em;
+  box-shadow: 0 0 5px #343a40;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-.section-experience h3 {
+/*Texto a con link*/
+.redireccion  .subtitulo a {
+  font-size:large;
   color: #343a40;
   /* Color de texto principal */
 }
 
-.section-experience .experience {
-  background-color: #ffffff;
-  /* Color de fondo para cada experiencia */
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #ced4da;
-  /* Borde ligero */
-}
-
-.section-experience .experience .details .position {
-  color: #343a40;
+.redireccion  .subtitulo  :hover {
+  background-color: #5b6874;
   /* Color de texto principal */
 }
+/*Fin seccion redireccion */
 
-.section-experience .experience .details .date {
-  color: #6c757d;
-  /* Color de texto secundario */
-}
-
-.section-experience .experience .details .location {
-  color: #6c757d;
-  /* Color de texto secundario */
-}
-
-.section-experience .experience .description {
-  color: #495057;
-  /* Color de texto para la descripción */
-}
-
-/* Sección Certificaciones */
-.section-certifications {
-  background-color: #f1f1f1;
-  /* Color de fondo para la sección Certificaciones */
-  padding: 30px;
-  margin-top: 20px;
-  border: 1px solid #ccc;
-  /* Borde ligero */
-}
-
-.section-certifications h3 {
-  color: #333;
-  /* Color de texto principal */
-}
-
-.section-certifications .certification {
-  background-color: #ffffff;
-  /* Color de fondo para cada certificación */
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  /* Borde ligero */
-}
-
-.section-certifications .certification .name {
-  color: #343a40;
-  /* Color de texto principal */
-}
-
-.section-certifications .certification .issuer {
-  color: #6c757d;
-  /* Color de texto secundario */
-}
-
-.section-certifications .certification .details {
-  color: #495057;
-  /* Color de texto para los detalles */
-}
-
-
-/* Estilos adicionales */
-.aleatorio {
-  display: block;
-  background-color: aquamarine;
-  padding: 20px;
-}
-
+/**/
 /* Estilos para la sección de descripción del proyecto */
-.seccion-descripcionProyecto {
-  background-color: #ffffff;
-  /* Fondo blanco para resaltar la sección */
-  padding: 20px;
-  /* Espaciado interno para un diseño limpio */
-  margin-top: 20px;
-  /* Espaciado superior para separación de otras secciones */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Sombra ligera para profundidad */
-  border-radius: 8px;
-  /* Bordes redondeados para un diseño moderno */
-}
+.seccionDescripcionProyecto {
+  
+  background-color: #f8f9fa;
+  padding: 0.5em;
+  margin:1em 1em 1em 1em; 
+  box-shadow: 0 0 10px #343a40;
+  border-radius: 1em;
+  border: 0.1em solid #343a40;
 
-.descripcion {
-  background-color: #f9f9f9;
-  /* Fondo claro para el contenido interno */
-  padding: 10px;
-  /* Espaciado interno */
-  border-radius: 8px;
-  /* Bordes redondeados */
+}
+/*Descricpcion del proyecto*/
+.seccionDescripcionProyecto .descripcion {
+  padding: 0.5em;
+  border-radius: 1em;
+  background-color: #f0f0e0;
+  /*background-color: #e2e0e0;/*/
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  /* Sombra ligera */
 }
 
-.proyecto {
+.seccionDescripcionProyecto .descripcion .proyecto {
+  margin: 0em 1em 0em 1em;
   font-size: 1.1rem;
   /* Tamaño de fuente para buena legibilidad */
   line-height: 1.6;
   /* Altura de línea para espacio entre líneas */
-  color: #555;
-  /* Color de texto para buen contraste */
+  color: #333;
 }
+.seccionDescripcionProyecto .descripcion .proyecto a{
+  color: #343a40;
+}
+/*hover de link a*/
+.seccionDescripcionProyecto .descripcion .proyecto a:hover{
+  background-color: #d1d1d1;
+}
+/*Fin */
 
-
+/**/
 /* Footer */
 .footer {
+  display: block;
   background-color: #343a40;
   /* Color de fondo para el pie de página */
   color: white;
   text-align: center;
   padding: 20px;
 }
-
-.footer p {
-  margin: 0;
+.footer .contenedorFooter{
+  display: block;
+  align-items: center;
 }
-
 .footer a {
-  color: #ffffff;
-  /* Color de enlace para el pie de página */
+  color: #f8f9fa;
   text-decoration: none;
 }
+/* Links y atribucion  - .footerDetalles*/
+ .footer .contenedorFooter .footerDetalles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ .footer .contenedorFooter .footerDetalles article{
+  flex: 1;
+  text-align: center;
+  min-height: 10px;
+ }
 
+.footer .contenedorFooter .footerDetalles article #links,
+.footer .contenedorFooter .footerDetalles article #atribucion{
+  margin: 1em;
+  padding-left: 1em;
+}
+.footer .contenedorFooter .footerDetalles article #links li a {
+  display: flex;
+}
+.footer .contenedorFooter .footerDetalles article #atribucion  {
+  list-style: none;
+}
+.footer .contenedorFooter .footerDetalles article #links li:hover ,
+.footer .contenedorFooter .footerDetalles article #atribucion li:hover{
+  background-color: #d1d1d1;  
+}
+/*INFORMACION DE CREADOR */
+.footer .contenedorFooter .footerDetalles .informacion  {
+  display: block;
+  align-items: center;
+}
+.footer .contenedorFooter .footerDetalles .informacion p {
+  display: block;
+  align-items: center;
+}
 /*Logo footer*/
-.footer .logos ul {
+.footer .contenedorFooter .footerDetalles .informacion .logos ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  width: 80%;
 }
+/*Atribucion de Iconos*/
+.footer .contenedorFooter .footerDetalles #atribucionIconos h4 {
+  font-size: 1.1em;
+}
+.footer .contenedorFooter .footerDetalles #atribucionIconos #atribucion a {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+.footer .contenedorFooter .copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+/*                        MEDIAS QUERRYS                                                          */
+/*Media Querry para celular medio 854 x 480 */
+/*    ORIENTACION VERTICAL : portrait*/
+@media(max-width:480px) and (orientation:portrait){
+/* section-about*/
+.section-about{
+flex-direction: column;
+}
+.section-about .foto{
+  margin-bottom: 1em;
+}
+.section-about .acerca-de{
+  max-width: 100%;
+  padding:1em;
+  padding-left: 1.8em;
+}
+.section-about .acerca-de p{
+  font-size: 1.3em;;
+} 
+  /*fin seccionAbout*/
 
+ /*seccionPersonalInfo*/
+ .seccionPersonalInfo {
+  flex-direction: column;
+ }
+ .seccionPersonalInfo .datos{
+align-items: center;
+  max-width: 80%;
+width: 90%;
+ }
+ .seccionPersonalInfo .datos .datosPersonales .Redes #redes  {
+justify-content: center;
+ }
+ /*Fin seccionPersonalInfo*/
+  
+ /*Seccion aptitudesDestacadas*/
+ .aptitudesDestacadas h3{
+  text-align: center;
+ }
+ /*Fin de aptitudesDestacadas*/
+
+ 
+  /* seccionAptitudes*/
+ .seccionAptitudes h2,
+ .seccionAptitudes .categoriaAptitudes .seccionPorCategoria h3 {
+text-align: center;
+ }
+ .seccionAptitudes{
+  align-content: center;
+ }
+ .seccionAptitudes .categoriaAptitudes .seccionPorCategoria{
+  width: 100%;
+ }
+ /*Fin seccionAptitudes*/
+  
+  /*Seccion redireccion*/
+  .redireccion {
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Footer*/
+  .footer .contenedorFooter .footerDetalles{
+    display: block;
+  }
+  .footer .contenedorFooter .footerDetalles article{
+    display: block;
+    margin-top: 0.5em;
+    padding: 0.5em 0em 0.5em 0em;
+    box-shadow: 0 0 3px #f8f9fa;
+  }
+
+}
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
 
   /* Estilos para tablets en modo vertical y smartphones en modo horizontal */
   body {
-    background-color: #495057;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
   }
@@ -485,16 +608,19 @@ display: block;
 /**/
 @media(max-width:575.98px) {
   body {
-    background-color:#6c757d;
+    background-color: #6c757d;
   }
 
   /*hacemos visible los botones*/
   .header #navPc {
-    display: none;    
+    display: none;
   }
-.header #abrir, .botonCerrar #cerrar{
-  display: block;
-}
+
+  .header #abrir,
+  .botonCerrar #cerrar {
+    display: block;
+  }
+
   /*Seccion Acerca de mi */
   .section-about {
     display: block;
@@ -504,18 +630,20 @@ display: block;
     margin-left: 5em;
     font-size: 0.6em;
   }
-  
+
 
   .header #cerrar {
     display: block;
   }
-/*Nav para menu movil*/
-.header  #abrir{
-  margin-right: 1em;
-  
-}
-.header #navMovil{
-    
+
+  /*Nav para menu movil*/
+  .header #abrir {
+    margin-right: 1em;
+
+  }
+
+  .header #navMovil {
+
     display: block;
     align-items: center;
     position: fixed;
@@ -527,13 +655,14 @@ display: block;
     background-color: grey;
     z-index: 1000;
     transition: linear;
-    
+
   }
 
-#navMovil .movil{
-  display: block;
-  width: 100%;
-}
+  #navMovil .movil {
+    display: block;
+    width: 100%;
+  }
+
   .header #navMovil .movil ul {
     display: flex;
     width: 100%;
@@ -541,36 +670,39 @@ display: block;
     font-size: x-large;
     flex-direction: column;
     align-items: center;
-   
+
   }
- /*Boton cerrar*/
- 
-  .header #navMovil  #cerrar {
+
+  /*Boton cerrar*/
+
+  .header #navMovil #cerrar {
     position: fixed;
     top: 96.4%;
     border: 2px solid #333;
     width: 100%;
   }
-  #navMovil #cerrar:hover{
+
+  #navMovil #cerrar:hover {
     background-color: #333;
   }
 
-.header #navMovil .movil ul li:hover{
-  position: relative;
-  top: 0.4em;
-  border-bottom: 4px solid #333;
-}
-
-
-.header #navMovil .movil ul li a{
-    width: 100%;
-   
+  .header #navMovil .movil ul li:hover {
+    position: relative;
+    top: 0.4em;
+    border-bottom: 4px solid #333;
   }
+
+
+  .header #navMovil .movil ul li a {
+    width: 100%;
+
+  }
+
   #navMovil .visible {
     display: flex;
     opacity: 1;
     visibility: visible;
-    
+
   }
 
   /*Secion Informacion Personal*/
@@ -583,7 +715,7 @@ display: block;
   }
 
   .datos {
-    width: 75%;
+    width: 100%;
   }
 
   /*programas*/
@@ -594,12 +726,14 @@ display: block;
     padding: 20px;
     /* Añade un poco de relleno al contenedor */
   }
- .categoriaAptitudes{
-  display: flex;
-  
- }
-   .categoriaAptitudes .seccion {
-   
+
+  .categoriaAptitudes {
+    display: flex;
+
+  }
+
+  .categoriaAptitudes .seccion {
+
     max-width: 90%;
     width: 60%;
     height: auto;
@@ -607,15 +741,15 @@ display: block;
     border: 1px solid #343a40;
     margin-bottom: 20px;
     /* Espacio entre las secciones */
-    
+
   }
 
- 
 
 
- /* @media(max-width: 1024px){
+
+  /* @media(max-width: 1024px){
     /* Estilos para tablets en modo horizontal y laptops pequeñas */
 
-/*
+  /*
   }*/
 }
