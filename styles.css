@@ -577,7 +577,7 @@ body p {
     .section-about {
         position: relative;
         top: -1.1em;
-        border: 1px solid blue;
+        
         margin: 0%;
         padding: 0;
         align-items: center;
@@ -626,13 +626,13 @@ body p {
     .seccionPersonalInfo .datos h3 {
         padding: 0.5em;
         font-size: 0.9em;
-        background-color: yellowgreen;
+        
     }
 
     /* Secccion de tarjeta  ajustamos la letra*/
     .seccionPersonalInfo .datos .datosPersonales ,
     .seccionPersonalInfo .datos #secundario1{
-        border: 2px solid blue;
+        
         font-size: 0.9em;
     }
 
@@ -649,32 +649,35 @@ font-size: 0.9em;
     .seccionAptitudes {
         margin: 0;
         padding: 0;
-        font-size: 00.9em;
+        font-size: 1em;
     }
     .seccionAptitudes .categoriaAptitudes {
         padding: 1em 0em 1em 0em;
-        border: 2px solid blue;
        
     }
     .seccionAptitudes .categoriaAptitudes .seccionPorCategoria {
         width: 80%;
         margin: 0;
-        font-size: small;
-        font-size: 0.8em;
+        font-size: 1em;
     }
-
-    /*titulo categoria*/
-    .seccionAptitudes .categoriaAptitudes .seccionPorCategoria h3,
-    .seccionAptitudes .categoriaAptitudes .seccionPorCategoria ul {}
 
     /*Fin seccionAptitudes*/
 
     /*Seccion redireccion*/
-    .redireccion {
+     .main .redireccion {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        justify-content: center;
     }
-
+    .redireccion  .subtitulo h2{
+        font-size: large;
+    }
+/*Descripcion de proyecto*/
+.main .seccionDescripcionProyecto .descripcion .proyecto{
+    font-size: medium;
+}
+/*Fin SeccionDescripcionProyecto*/
+/**/
     /*Footer*/
     .footer .contenedorFooter .footerDetalles {
         display: block;
