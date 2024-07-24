@@ -98,16 +98,61 @@ body p {
     display: block;
 }
 
-#navMovil {
-    display: none;
-}
-
-#navMovil .visible {
-    display: flex;
+.header #navMovil .visible {
+    display: block;
     opacity: 1;
     visibility: visible;
+}
+
+/**/
+.container .header #navMovil {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 2.7em;
+    left: 0em;
+    background-color: yellow;
 
 }
+
+
+/*div .movil*/
+/*dentro de #navMovil contiene el texto*/
+#navMovil .movil {
+    background-color: #343a40;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#navMovil .movil ul {
+    display: block;
+    width: 100%;
+    
+} 
+#navMovil  .movil ul li a{
+display: flex;
+flex-direction: column;
+padding: 0;
+    }
+    #navMovil  .movil ul li a h3{
+    margin: 0;
+        }
+
+/*boton*/
+#navMovil .botonCerrar {
+    background-color: turquoise;
+    position: fixed;
+    width: 100%;
+    top: 96.4%;
+    left: 0em;
+}
+
+#navMovil .botonCerrar #cerrar {
+    width: 100%;
+}
+
 
 /*Fin nav Movil*/
 /******/
@@ -240,7 +285,8 @@ body p {
 .aptitudesDestacadas {
     background-color: #f8f9fa;
     padding: 1em;
-    box-shadow: 0 0 5px #343a40;
+    box-shadow: 0 0 3px #343a40;
+
 }
 
 /*Titulo aptitudes*/
@@ -258,8 +304,14 @@ body p {
     justify-content: space-around;
     background-color: #f8f9fa;
     font-size: 1.1em;
-    box-shadow: 0 0 20px #343a40;
+    border-radius: 0.4em;
+    box-shadow: 0 0 10px #343a40;
     padding: 1em;
+    list-style: none;
+}
+
+.aptitudesDestacadas ul li {
+    font-style: oblique;
 }
 
 /*Fin aptitudesDestacadas*/
@@ -363,7 +415,7 @@ body p {
 .seccionDescripcionProyecto .descripcion {
     padding: 0.5em;
     border-radius: 1em;
-    background-color: #f0f0e0;
+    background-color: #f8f9fa;
     /*background-color: #e2e0e0;/*/
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -396,7 +448,7 @@ body p {
     /* Color de fondo para el pie de página */
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 0.5em;
 }
 
 .footer .contenedorFooter {
@@ -409,47 +461,101 @@ body p {
     text-decoration: none;
 }
 
-/* Links y atribucion  - .footerDetalles*/
+/* Links y atribucion  - .footerDetalles  contenedor*/
 .footer .contenedorFooter .footerDetalles {
-    display: flex;
+    display: block;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
 }
 
+/*articulos de .footerDetalles*/
 .footer .contenedorFooter .footerDetalles article {
-    flex: 1;
     text-align: center;
     min-height: 10px;
 }
 
-.footer .contenedorFooter .footerDetalles article #links,
-.footer .contenedorFooter .footerDetalles article #atribucion {
-    margin: 1em;
-    padding-left: 1em;
-}
+/*articulo links con redireccion y atribucion de iconos*/
+/* articulo   #link , ul #links */
 
-.footer .contenedorFooter .footerDetalles article #links li a {
+/*-----   ul  #links     ----*/
+.footer .contenedorFooter .footerDetalles #link #links {
+    margin: 0em 1em;
+    padding: 0.5em;
     display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    border-bottom: 2px solid #f8f9fa;
+    justify-content: space-around;
 }
 
-.footer .contenedorFooter .footerDetalles article #atribucion {
+/*----      article     #atribucionIconos                      -----*/
+.footer .contenedorFooter .footerDetalles #atribucionIconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0em 1em;
+    margin-top: 0;
+    padding: 0 0.5em;
+    border-bottom: 2px solid #f8f9fa;
+}
+
+/*-----------  ul #atribucion -------*/
+.footer .contenedorFooter .footerDetalles #atribucionIconos #atribucion {
     list-style: none;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding: 0;
+    margin-left: 1em;
 }
 
+.footer .contenedorFooter .footerDetalles #atribucionIconos #atribucion li {
+    border-bottom: 2px solid #f8f9fa;
+}
+
+.footer .contenedorFooter .footerDetalles #atribucionIconos #atribucion a {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+/*Creador */
+/* articulo #info  con div informacion*/
+.footer .contenedorFooter .footerDetalles #info {
+    border-bottom: 2px solid #f8f9fa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0em 1em;
+}
+
+/*-----  div informacion  ------*/
+.footer .contenedorFooter .footerDetalles #info .informacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/*   div logos dentro de #info*/
+.footer .contenedorFooter .footerDetalles #info .logos {
+    width: 40%;
+}
+
+.footer .contenedorFooter .footerDetalles #info .logos ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 1em 0em;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/*----     hover de footer /article/li    --- */
 .footer .contenedorFooter .footerDetalles article #links li:hover,
 .footer .contenedorFooter .footerDetalles article #atribucion li:hover {
-    background-color: #d1d1d1;
-}
-
-/*INFORMACION DE CREADOR */
-.footer .contenedorFooter .footerDetalles .informacion {
-    display: block;
-    align-items: center;
-}
-
-.footer .contenedorFooter .footerDetalles .informacion p {
-    display: block;
-    align-items: center;
+    background-color: #5b6874;
 }
 
 /*Logo footer*/
@@ -460,18 +566,10 @@ body p {
     list-style: none;
 }
 
-/*Atribucion de Iconos*/
-.footer .contenedorFooter .footerDetalles #atribucionIconos h4 {
-    font-size: 1.1em;
-}
-
-.footer .contenedorFooter .footerDetalles #atribucionIconos #atribucion a {
-    margin-top: 0;
-    font-size: 1.2em;
-}
-
+/*Copyrigth*/
 .footer .contenedorFooter .copy {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: auto;
@@ -542,6 +640,27 @@ body p {
 /*Ajusta el tamaño de seccionAptitudes al minimizar */
 @media(max-width:780px) {
 
+    /*Display none para el nav de PC*/
+    .header #navPc {
+        display: none;
+    }
+
+    /**/
+    /*Visible el nav movil*/
+    .header #navMovil {
+        display: block;
+    }
+
+    #abrir,
+    #cerrar {
+        display: block;
+    }
+
+    /**/
+    /*barra movil*/
+
+    /**/
+
     /*Div de aptitudes - */
     .seccionAptitudes .categoriaAptitudes {
         flex-direction: column;
@@ -568,16 +687,12 @@ body p {
 
     }
 
-    .header #navPc {
-        display: none;
-    }
-
     /* section-about*/
 
     .section-about {
         position: relative;
         top: -1.1em;
-        
+
         margin: 0%;
         padding: 0;
         align-items: center;
@@ -606,7 +721,8 @@ body p {
 
     .section-about .acerca-de p {
         color: #343a40;
-        font-size: 0.8em;
+        font-size: medium;
+
         text-align: left;
     }
 
@@ -625,59 +741,66 @@ body p {
     /*seccion de titulo de tarjeta - fixed*/
     .seccionPersonalInfo .datos h3 {
         padding: 0.5em;
-        font-size: 0.9em;
-        
+        font-size: medium;
+
     }
 
     /* Secccion de tarjeta  ajustamos la letra*/
-    .seccionPersonalInfo .datos .datosPersonales ,
-    .seccionPersonalInfo .datos #secundario1{
-        
-        font-size: 0.9em;
+    .seccionPersonalInfo .datos .datosPersonales,
+    .seccionPersonalInfo .datos #secundario1 {
+
+        font-size: 1.2em;
     }
 
     /*Fin tarjeta datos personales*/
 
-/**/
-/*Secion Aptitudes Destacadas*/
-.aptitudesDestacadas ,.aptitudesDestacadas ul li{
-font-size: 0.9em;
-}
-/*Fin seccion Aptitudes destacadas*/
-/**/
-/*Seccion Aptitudes*/
+    /**/
+    /*Secion Aptitudes Destacadas*/
+    .aptitudesDestacadas,
+    .aptitudesDestacadas ul li {
+        font-size: medium;
+    }
+
+    /*Fin seccion Aptitudes destacadas*/
+    /**/
+    /*Seccion Aptitudes*/
     .seccionAptitudes {
         margin: 0;
         padding: 0;
         font-size: 1em;
     }
+
     .seccionAptitudes .categoriaAptitudes {
         padding: 1em 0em 1em 0em;
-       
+
     }
+
     .seccionAptitudes .categoriaAptitudes .seccionPorCategoria {
         width: 80%;
         margin: 0;
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     /*Fin seccionAptitudes*/
 
     /*Seccion redireccion*/
-     .main .redireccion {
+    .main .redireccion {
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
     }
-    .redireccion  .subtitulo h2{
+
+    .redireccion .subtitulo h2 {
         font-size: large;
     }
-/*Descripcion de proyecto*/
-.main .seccionDescripcionProyecto .descripcion .proyecto{
-    font-size: medium;
-}
-/*Fin SeccionDescripcionProyecto*/
-/**/
+
+    /*Descripcion de proyecto*/
+    .main .seccionDescripcionProyecto .descripcion .proyecto {
+        font-size: medium;
+    }
+
+    /*Fin SeccionDescripcionProyecto*/
+    /**/
     /*Footer*/
     .footer .contenedorFooter .footerDetalles {
         display: block;
@@ -690,4 +813,56 @@ font-size: 0.9em;
         box-shadow: 0 0 3px #f8f9fa;
     }
 
+}
+
+/**/
+@media(max-width:230px) {
+    body {
+        font-size: small;
+    }
+
+    body h2,
+    h3 {
+        font-size: 0.9em;
+    }
+
+    .section-about .acerca-de p {
+        font-size: small;
+    }
+
+    /**/
+    .seccionPersonalInfo .datos h3 {
+        font-size: 0.9em;
+        width: 80%;
+    }
+
+    .seccionPersonalInfo .datos p .seccionPersonalInfo .datos .datosPersonales ul {
+        font-size: 0.7em;
+    }
+
+    /**/
+    .seccionAptitudes .categoriaAptitudes .seccionPorCategoria {
+        width: 0 auto;
+        min-height: 10%;
+        margin-left: 0;
+        padding-left: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+
+    .seccionAptitudes .categoriaAptitudes .seccionPorCategoria ul li {
+        margin-left: 0.6em;
+
+        width: 100%;
+    }
+
+    /**/
+    .redireccion .subtitulo h2 {
+        font-size: small;
+    }
+
+    /**/
+    .seccionDescripcionProyecto .descripcion p {
+        font-size: 0.8em;
+    }
 }
