@@ -12,9 +12,10 @@
 </head>
 
 <body>
-    <div class="container">
-         <!--header -->
-         <header class="header">
+      <!--Contenedor principal-->
+      <div class="container">
+        <!--header -->
+        <header class="header">
             <!--Logo Inicio-->
             <a href="../index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
             <!--Nav para pc/tablet-->
@@ -27,27 +28,28 @@
                 </ul>
             </nav>
             <button onclick="desplegarMenu('navMovil')" class="menu" id="abrir"><i class="fa fa-chevron-down fa-2x"
-                    style="color:#ffffff;" aria-hidden="true"></i>
+                    style="color:#f8f9fa;" aria-hidden="true"></i>
             </button>
             <!--Barra de navegacion movil-->
             <nav id="navMovil">
                 <div class="movil">
                     <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../ExperienciaLaboral/experienciaLaboral.html">Experiencia Laboral</a></li>
-                        <li><a href="../Certificaciones/certificaciones.html">Certificaciones</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="../Proyecto/proyecto.html">Sobre el Proyecto</a></li>
+                        <li><a href="../index.html"><h3>Inicio</h3></a></li>
+                        <li><a href="../ExperienciaLaboral/experienciaLaboral.html"><h3>Experiencia</h3> </a></li>
+                        <li><a href="../Certificaciones/certificaciones.html"><h3>Certificaciones </h3></a></li>
+                        <li><a href="contacto.html"><h3> Contacto <h3></h3></a></li>
+                        <li><a href="../Proyecto/proyecto.html"><h3>Sobre el Proyecto </h3></a></li>
                     </ul>
                 </div>
                 <div class="botonCerrar">
                     <button onclick="desplegarMenu('navMovil')" id="cerrar">
-                        <i class="fa fa-chevron-up fa-2x" aria-hidden="true" style="color:#ffffff;"></i></i>
+                        <i class="fa fa-chevron-up fa-2x" aria-hidden="true" style="color:#f8f9fa;"></i></i>
                     </button>
                 </div>
             </nav>
             <!--Barra de navegacion movil-->
         </header>
+
 
         <main class="main">
             <section class="seccion-contacto">
@@ -67,21 +69,49 @@
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="4" placeholder="Deje un comentario " required></textarea>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button  type="submit">Enviar</button>
                 </form>
             </section>
         </main>
         <footer class="footer">
-            <div class="container">
-                <h3>Creado por Matias Gonzalez</h3>
-                <p>Pagina creada con HTML, CSS y JS para Proyecto Final de Introducción a la Programación</p>
-                <div class="logos">
-                    <ul>
-                        <li><i class="fa-brands fa-html5 fa-2xl" style="color:white;"></i></li>
-                        <li><i class="fa-brands fa-css3-alt fa-2xl" style="color:white;"></i></li>
-                        <li><i class="fa-brands fa-js fa-2xl" style="color:white;"></i></li>
-                    </ul>
+            <div class="contenedorFooter">
+                <div class="footerDetalles">
+                    <article id="link">
+                        <ul id="links">
+                            <li><a href="http://"><strong>Inicio</strong></a></li>
+                            <li><a href="http://"><strong>Experiencia Laboral</strong></a></li>
+                            <li><a href="http://"><strong>Certificaciones</strong></a></li>
+                            <li><a href="http://"><strong>Contacto</strong></a></li>
+                            <li><a href="http://"><strong>Sobre el Proyecto</strong></a></li>
+                        </ul>
+                    </article>
+                   <!---->
+                    <article id="atribucionIconos" >
+                        <h3>Iconos utilizados :</h3>
+                        <ul id="atribucion">
+                            <li><a href="">fontawesome</a></li>
+                            <li><a href="">Flaticon</a></li>
+                        </ul>
+                    </article>
+                    <!---->
+                    <article id="info">
+                        <div class="informacion">
+                            <h3>Proyecto Final de Introducción a la Programación creado por Matias Gonzalez con :</h3>                           
+                            <div class="logos">
+                                <ul>
+                                    <li><i class="fa-brands fa-html5 fa-2xl" style="color:white;"></i></li>
+                                    <li><i class="fa-brands fa-css3-alt fa-2xl" style="color:white;"></i></li>
+                                    <li><i class="fa-brands fa-js fa-2xl" style="color:white;"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                   
                 </div>
+                <div class="copy">
+                    <h3> &copy; 2024 Matías González. Todos los derechos reservados. Este currículum fue realizado como proyecto final del curso de Introducción a la Programación.</h3> 
+                </div>
+
             </div>
         </footer>
     </div>

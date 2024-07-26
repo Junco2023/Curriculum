@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!--Contenedor principal-->
     <div class="container">
         <!--header -->
         <header class="header">
@@ -19,109 +20,155 @@
             <!--Nav para pc/tablet-->
             <nav id="navPc">
                 <ul>
-                    <li><a href="ExperienciaLaboral/experienciaLaboral.html">Experiencia Laboral</a></li>
+                    <li><a href="../ExperienciaLaboral/experienciaLaboral.html">Experiencia Laboral</a></li>
                     <li><a href="../Certificaciones/certificaciones.html">Certificaciones</a></li>
                     <li><a href="../Contacto/contacto.html">Contacto</a></li>
                     <li><a href="proyecto.html">Sobre el Proyecto</a></li>
                 </ul>
             </nav>
             <button onclick="desplegarMenu('navMovil')" class="menu" id="abrir"><i class="fa fa-chevron-down fa-2x"
-                    style="color:#ffffff;" aria-hidden="true"></i>
+                    style="color:#f8f9fa;" aria-hidden="true"></i>
             </button>
             <!--Barra de navegacion movil-->
             <nav id="navMovil">
                 <div class="movil">
                     <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../ExperienciaLaboral/experienciaLaboral.html">Experiencia Laboral</a></li>
-                        <li><a href="../Certificaciones/certificaciones.html">Certificaciones</a></li>
-                        <li><a href="../Contacto/contacto.html">Contacto</a></li>
-                        <li><a href="proyecto.html">Sobre el Proyecto</a></li>
+                        <li><a href="../index.html">
+                                <h3>Inicio</h3>
+                            </a></li>
+                        <li><a href="../ExperienciaLaboral/experienciaLaboral.html">
+                                <h3>Experiencia</h3>
+                            </a></li>
+                        <li><a href="../Certificaciones/certificaciones.html">
+                                <h3>Certificaciones </h3>
+                            </a></li>
+                        <li><a href="../Contacto/contacto.html">
+                                <h3> Contacto <h3></h3>
+                            </a></li>
+                        <li><a href="proyecto.html">
+                                <h3>Sobre el Proyecto </h3>
+                            </a></li>
                     </ul>
                 </div>
                 <div class="botonCerrar">
                     <button onclick="desplegarMenu('navMovil')" id="cerrar">
-                        <i class="fa fa-chevron-up fa-2x" aria-hidden="true" style="color:#ffffff;"></i></i>
+                        <i class="fa fa-chevron-up fa-2x" aria-hidden="true" style="color:#f8f9fa;"></i></i>
                     </button>
                 </div>
             </nav>
             <!--Barra de navegacion movil-->
         </header>
 
-        <main class="main">
-            <section class="descripcion-proyecto">
-                <div class="container">
-                    <p class="proyecto">
-                        Trabajé en vivo con compañeros, colaborando estrechamente en proyectos conjuntos. Esta
-                        experiencia
-                        no solo mejoró mis habilidades técnicas en HTML, CSS y JavaScript para crear sitios web
-                        dinámicos y
-                        responsivos, sino que también fortaleció mis habilidades blandas.
 
-                    </p>
-                    <p class="proyecto">Aprendí a comunicarme efectivamente, trabajar en equipo, resolver problemas de
-                        manera eficiente,
-                        practicar la paciencia y
-                        la empatía, y gestionar eficazmente mi tiempo.
-                    </p>
-                    <p class="proyecto"> Estos desafíos prácticos en un entorno colaborativo no solo mejoraron mi
-                        desempeño
-                        académico y mi
-                        capacidad de aprendizaje, sino que también reforzaron mi autoestima, confianza en mi trabajo y
-                        sentido de comunidad. Esta experiencia enriquecedora en Egg me permitió desarrollar habilidades
-                        esenciales como la comunicación asertiva, el liderazgo y la capacidad de aprender a aprender,
-                        preparándome adecuadamente para enfrentar nuevos retos profesionales.
-                    </p>
-                </div>
+        <main class="main">
+            <h1>Sobre el proyecto</h1>
+            <section class="descripcion-proyecto">
+
+                <p class="proyecto">
+                    Trabajé en vivo con compañeros, colaborando estrechamente en proyectos conjuntos. Esta
+                    experiencia
+                    no solo mejoró mis habilidades técnicas en HTML, CSS y JavaScript para crear sitios web
+                    dinámicos y
+                    responsivos, sino que también fortaleció mis habilidades blandas.
+
+                </p>
+                <p class="proyecto">Aprendí a comunicarme efectivamente, trabajar en equipo, resolver problemas de
+                    manera eficiente,
+                    practicar la paciencia y
+                    la empatía, y gestionar eficazmente mi tiempo.
+                </p>
+                <p class="proyecto"> Estos desafíos prácticos en un entorno colaborativo no solo mejoraron mi
+                    desempeño
+                    académico y mi
+                    capacidad de aprendizaje, sino que también reforzaron mi autoestima, confianza en mi trabajo y
+                    sentido de comunidad. Esta experiencia enriquecedora en Egg me permitió desarrollar habilidades
+                    esenciales como la comunicación asertiva, el liderazgo y la capacidad de aprender a aprender,
+                    preparándome adecuadamente para enfrentar nuevos retos profesionales.
+                </p>
+
             </section>
             <section class="aptitudes-Proyecto">
                 <div class="listadoAptitudes">
-                    <button onclick="toggleSkills('tecnica')">Mostrar Habilidades Técnicas</button>
-                    <div class="habilidades" id="habilidades-tecnicas" >
-                        <h3>Habilidades Tecnicas</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Diseño Responsive</li>
-                            <li>Uso de Flexbox y Css para control de layout</li>
-                        </ul>
-                    </div>
-                    <div class="habilidades">
-                        <h3>Habilidades Blandas</h3>
-                        <ul>
-                            <li>Comunicacion Efectiva</li>
-                            <li>Trabajo en equipo</li>
-                            <li>Resolucion de Problemas</li>
-                            <li>Paciencia y empatia</li>
-                            <li>Gestion de tiempo</li>
-                        </ul>
-                    </div>
-                    <div class="habilidades">
-                        <h3>Otras Aptitudes</h3>
-                        <ul>
-                            <li>Aumento del desempeño academico y capacidad de aprendizaje </li>
-                            <li>Mejora de los vinculos con otras personas</li>
-                            <li>Refuerzo de la autoestima y confianza en el trabajo propio </li>
-                            <li>Impulso de la autonomia y capacidad para aprender a aprender </li>
-                            <li>Mejora del sentido de comunidad</li>
-                        </ul>
-                    </div>
+                    <article>
+                        <button onclick="mostrarHabilidades('tecnica')"><strong>Habilidades Tecnicas</strong></button>
+                        <div class="habilidades" id="habilidades-tecnicas">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Diseño Responsive</li>
+                                <li>Uso de Flexbox y Css para control de layout</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <button onclick="mostrarHabilidades('blanda')"><strong>Habilidades Blandas</strong></button>
+                        <div class="habilidades" id="habilidades-blandas">
+                            <ul>
+                                <li>Comunicacion Efectiva</li>
+                                <li>Trabajo en equipo</li>
+                                <li>Resolucion de Problemas</li>
+                                <li>Paciencia y empatia</li>
+                                <li>Gestion de tiempo</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <button onclick="mostrarHabilidades('otra')"><strong>Otras Habilidades</strong></button>
+                        <div class="habilidades" id="otras">
+                            <ul>
+                                <li>Aumento del desempeño academico y capacidad de aprendizaje </li>
+                                <li>Mejora de los vinculos con otras personas</li>
+                                <li>Refuerzo de la autoestima y confianza en el trabajo propio </li>
+                                <li>Impulso de la autonomia y capacidad para aprender a aprender </li>
+                                <li>Mejora del sentido de comunidad</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-            <div class="container">
-                <h3>Creado por Matias Gonzalez</h3>
-                <p>Pagina creada con HTML, CSS y JS para Proyecto Final de Introducción a la Programación</p>
-                <div class="logos">
-                    <ul>
-                        <li><i class="fa-brands fa-html5 fa-2xl" style="color:white;"></i></li>
-                        <li><i class="fa-brands fa-css3-alt fa-2xl" style="color:white;"></i></li>
-                        <li><i class="fa-brands fa-js fa-2xl" style="color:white;"></i></li>
-                    </ul>
+            <div class="contenedorFooter">
+                <div class="footerDetalles">
+                    <article id="link">
+                        <ul id="links">
+                            <li><a href="http://"><strong>Inicio</strong></a></li>
+                            <li><a href="http://"><strong>Experiencia Laboral</strong></a></li>
+                            <li><a href="http://"><strong>Certificaciones</strong></a></li>
+                            <li><a href="http://"><strong>Contacto</strong></a></li>
+                            <li><a href="http://"><strong>Sobre el Proyecto</strong></a></li>
+                        </ul>
+                    </article>
+                    <!---->
+                    <article id="atribucionIconos">
+                        <h3>Iconos utilizados :</h3>
+                        <ul id="atribucion">
+                            <li><a href="">fontawesome</a></li>
+                            <li><a href="">Flaticon</a></li>
+                        </ul>
+                    </article>
+                    <!---->
+                    <article id="info">
+                        <div class="informacion">
+                            <h3>Proyecto Final de Introducción a la Programación creado por Matias Gonzalez con :</h3>
+                            <div class="logos">
+                                <ul>
+                                    <li><i class="fa-brands fa-html5 fa-2xl" style="color:white;"></i></li>
+                                    <li><i class="fa-brands fa-css3-alt fa-2xl" style="color:white;"></i></li>
+                                    <li><i class="fa-brands fa-js fa-2xl" style="color:white;"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
+                <div class="copy">
+                    <h3> &copy; 2024 Matías González. Todos los derechos reservados. Este currículum fue realizado como
+                        proyecto final del curso de Introducción a la Programación.</h3>
+                </div>
+
             </div>
         </footer>
     </div>

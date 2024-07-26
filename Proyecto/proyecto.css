@@ -23,69 +23,56 @@ body {
   color: #555;
 }
 
-/* Footer */
-/* Footer */
-.footer {
-  background-color: #343a40;
-  /* Color de fondo para el pie de página */
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.footer p {
-  margin: 0;
-}
-
-.footer a {
-  color: #ffffff;
-  /* Color de enlace para el pie de página */
-  text-decoration: none;
-}
-
-/*Logo footer*/
-.footer .logos ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  width: 80%;
-}
-
 /* Estilos para la sección de habilidades y aptitudes */
-.aptitudes-Proyecto {
+.main .aptitudes-Proyecto {
   background-color: #f1f1f1;
   /* Color de fondo para la sección */
-  padding: 30px;
-  margin-top: 20px;
+  padding: 2em;
+  margin-top: 1em;
   border: 1px solid #ccc;
   /* Borde ligero */
 }
-
-.listadoAptitudes {
+/*contenedor de articulos habilidades*/
+.main .aptitudes-Proyecto .listadoAptitudes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
 }
-
-.habilidades {
-  flex: 1;
-  padding: 20px;
+/*articulo de habilidades*/
+.main .aptitudes-Proyecto .listadoAptitudes article button{
+background-color: #f8f9fa;
+width: 100%;
+font-size: 1.3em;
+color: #343a40;;
+border: 2px solid #343a40;
+}
+.main .aptitudes-Proyecto .listadoAptitudes article {
+  width: 80%;
+  margin-bottom: 1em;
+  }
+.main .aptitudes-Proyecto .listadoAptitudes article .habilidades {
+  padding: 0.5em 1em;
   background-color: #ffffff;
   /* Color de fondo para cada sección de habilidades */
   border: 1px solid #ced4da;
   /* Borde ligero */
-  border-radius: 8px;
+  border-radius: 0.6em;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   /* Sombra ligera */
+ 
+  
+}
+.main .aptitudes-Proyecto .listadoAptitudes article .habilidades ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0em 0em;
+  padding: 0;
+  
 }
 
-.habilidades h3 {
-  color: #343a40;
-  /* Color de texto principal */
-  margin-bottom: 10px;
-}
 
 .habilidades ul {
   list-style-type: none;
@@ -101,12 +88,22 @@ body {
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
   
+  .main .aptitudes-Proyecto .listadoAptitudes article {
+    width: 100%;
+    
+    }
 
-  .listadoAptitudes {
-    flex-direction: column;
-  }
+  
+}
 
-  .habilidades {
-    margin-bottom: 20px;
-  }
+@media (max-width: 480px) {
+  .main .aptitudes-Proyecto   {
+    margin: 0.3em;
+    padding: 0em;
+    }
+  .main .aptitudes-Proyecto .listadoAptitudes article {
+    width: 100%;
+    }
+
+  
 }

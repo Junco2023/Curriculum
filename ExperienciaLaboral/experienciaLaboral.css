@@ -1,20 +1,12 @@
 /* Estilos generales */
 
- 
-
-  
-
-main {
-    margin-top: 20px;
-
-}
-
 .seccion1 {
     background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 2em;
+    margin-top: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 3em;
+
 }
 
 .seccion1 h1 {
@@ -23,77 +15,118 @@ main {
     margin-bottom: 20px;
 }
 
-.experiencias {
-    display: grid;
-    gap: 20px;
+/*div contenedor de experiencias*/
+.seccion1 .experiencias {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+
+
 }
 
-.experiencia {
+/*Seccion con cada experiencia*/
+.seccion1 .experiencias .experiencia {
     background-color: #fff;
-   
-    width: auto;
-    padding: 20px;
+    width: 80%;
+    padding: 2em;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 1em;
 }
 
-.detalles {
+.seccion1 .experiencias .experiencia .detalles {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #343a30;
 }
 
+/*Cargo del puesto*/
 .cargo {
     font-size: 1.5rem;
     color: #333;
 }
 
+/*fecha de inicio y fin*/
 .fecha h6 {
     margin: 0;
     color: #555;
 }
 
+/*Lugar de trabajo*/
 .lugar {
     color: #666;
 }
 
-.descripcion {
+/*descripcion del puesto*/
+.seccion1 .experiencias .descripcion {
     margin-bottom: 20px;
     line-height: 1.6;
 }
 
-.separador {
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
+/*separa descripcion y aptitudes*/
+.seccion1 .experiencias .separador {
+    border-color: #343a30;
+    border: 2px solid #343a30;
+    margin-bottom: 0.5em;
 }
 
-.aptitudes {
+/*contenedor de aptitudes */
+.seccion1 .experiencias .aptitudes {
     background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: block;
+    text-align: center;
+    padding: 0.5em 1em;
+    border-radius: 1.5em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.aptitudes h3 {
+.seccion1 .experiencias .aptitudes h4 {
     color: #333;
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin: 0;
+}
+
+.seccion1 .experiencias .aptitudes ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 1.2em;
+
 }
 
 @media (max-width: 768px) {
-/*Header*/
+    /*Header*/
 
 
-
-
-    .experiencia .detalles{
-        display: block;
-        text-align: center;
+    .seccion1 {
+        border-radius: 1em;
+        padding: 0.5em;
     }
 
-    .experiencias {
-        grid-template-columns: 1fr;
+    .seccion1 .experiencias {
+        gap: 0em;
     }
+
+    .seccion1 .experiencias .experiencia {
+        margin: 1em 0em;
+        width: 90%;
+    }
+
+    .seccion1 .experiencias .aptitudes {
+        width: 0 auto;
+    }
+
+    .seccion1 .experiencias .aptitudes ul {
+        flex-direction: column;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+
 }

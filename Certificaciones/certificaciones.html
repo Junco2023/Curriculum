@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!--Contenedor principal-->
     <div class="container">
         <!--header -->
         <header class="header">
@@ -19,7 +20,6 @@
             <!--Nav para pc/tablet-->
             <nav id="navPc">
                 <ul>
-                    <li><a href="../index.html"></a></li>
                     <li><a href="../ExperienciaLaboral/experienciaLaboral.html">Experiencia Laboral</a></li>
                     <li><a href="certificaciones.html">Certificaciones</a></li>
                     <li><a href="../Contacto/contacto.html">Contacto</a></li>
@@ -27,56 +27,78 @@
                 </ul>
             </nav>
             <button onclick="desplegarMenu('navMovil')" class="menu" id="abrir"><i class="fa fa-chevron-down fa-2x"
-                    style="color:#ffffff;" aria-hidden="true"></i>
+                    style="color:#f8f9fa;" aria-hidden="true"></i>
             </button>
             <!--Barra de navegacion movil-->
             <nav id="navMovil">
                 <div class="movil">
                     <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../ExperienciaLaboral/experienciaLaboral.html">Experiencia Laboral</a></li>
-                        <li><a href="certificaciones.html">Certificaciones</a></li>
-                        <li><a href="../Contacto/contacto.html">Contacto</a></li>
-                        <li><a href="../Proyecto/proyecto.html">Sobre el Proyecto</a></li>
+                        <li><a href="../index.html">
+                                <h3>Inicio</h3>
+                            </a></li>
+                        <li><a href="../ExperienciaLaboral/experienciaLaboral.html">
+                                <h3>Experiencia</h3>
+                            </a></li>
+                        <li><a href="certificaciones.html">
+                                <h3>Certificaciones </h3>
+                            </a></li>
+                        <li><a href="../Contacto/contacto.html">
+                                <h3> Contacto <h3></h3>
+                            </a></li>
+                        <li><a href="../Proyecto/proyecto.html">
+                                <h3>Sobre el Proyecto </h3>
+                            </a></li>
                     </ul>
                 </div>
                 <div class="botonCerrar">
                     <button onclick="desplegarMenu('navMovil')" id="cerrar">
-                        <i class="fa fa-chevron-up fa-2x" aria-hidden="true" style="color:#ffffff;"></i></i>
+                        <i class="fa fa-chevron-up fa-2x" aria-hidden="true" style="color:#f8f9fa;"></i></i>
                     </button>
                 </div>
             </nav>
             <!--Barra de navegacion movil-->
         </header>
 
-        <main>
+
+        <main class="main">
             <section class="seccion1">
                 <h1>Certificaciones</h1>
                 <div class="certificados">
 
                     <!--Programacion Web-Egg-->
                     <div class="certificacion">
-                        <div class="nombre">Programacion Web</div>
+                        <div class="nombre"><strong>Programacion Web</strong></div>
                         <div class="emisores">
                             <div class="emisor">Egg</div>
                             <div class="fecha">Junio 2024</div>
                         </div>
-                        <div class="resumen">Durante mi formación en desarrollo web, adquirí experiencia en la creación
-                            de sitios dinámicos y responsivos con HTML, CSS y JavaScript. Utilicé GitHub para la gestión
+
+                        <div class="resumen">Durante mi formación en desarrollo web, adquirí experiencia en la
+                            creación
+                            de sitios dinámicos y responsivos con HTML, CSS y JavaScript. Utilicé GitHub para la
+                            gestión
                             de versiones y colaboración, Visual Studio Code como mi IDE principal, y ChatGPT para
                             asistencia técnica optimizando mi aprendizaje continuo en un entorno tecnológico en
                             constante evolución
                         </div>
                         <div class="aptitudes">
-                            <p>Aptitudes destacadas: Html ,Css,Js , Github ,Pensamiento lógico, resolución de problemas,
-                                gestión de proyectos.
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Html</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Github</li>
+                                <li>Pensamiento Logico</li>
+                                <li>Resolucion de Problemas</li>
+                                <li>Gestion de proyectos</li>
+                            </ul>
                         </div>
+
                     </div>
 
                     <!--Full Stack Java-->
                     <div class="certificacion">
-                        <div class="nombre">Desarrollador Full Stack Java</div>
+                        <div class="nombre"> <strong>Desarrollador Full Stack Java</strong></div>
                         <div class="emisores">
                             <div class="emisor">Universidad de la Punta</div>
                             <div class="fecha">Octubre 2023</div>
@@ -88,16 +110,24 @@
                             Orientada a Objetos (POO).
                         </div>
                         <div class="aptitudes">
-                            <p>Aptitudes destacadas:Desarrollo Full Stack · Programación orientada a objetos (POO) ·
-                                GitHub · Desarrollo de aplicaciones · Base de datos Mysql · Desarrollo en Java con
-                                NetBeans · Patron MVC · Java Database Connectivity (JDBC) · JPA · Colaboración entre
-                                equipos · pensamiento Critico · Pensamiento Logico.
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Desarrollo de aplicaciones</li>
+                                <li>Programación orientada a objetos (POO)</li>
+                                <li>GitHub</li>
+                                <li>Base de datos Mysql</li>
+                                <li>Desarrollo en Java con NetBeans</li>
+                                <li>Patron MVC</li>
+                                <li>Java Database Connectivity (JDBC)</li>
+                                <li>Colaboración entre equipos </li>
+                                <li>Pensamiento Critico </li>
+                                <li>Pensamiento Logico.</li>
+                            </ul>
                         </div>
                     </div>
                     <!--Marketing Digital-->
                     <div class="certificacion">
-                        <div class="nombre">Marketing Digital</div>
+                        <div class="nombre"><strong>Marketing Digital</strong></div>
                         <div class="emisores">
                             <div class="emisor">Aleph-Digital Expert</div>
                             <div class="fecha">Marzo 2023 - Agosto 2023</div>
@@ -107,32 +137,42 @@
                             TikTok y Meta Ads. Dominio en análisis de datos para la toma de decisiones estratégicas.
                         </div>
                         <div class="aptitudes">
-                            <p>Aptitudes destacadas: Estrategia de marketing · Gestión de campañas · Gestión de redes
-                                sociales · Publicidad en redes · Segmentación de audiencias · Optimizacion de
-                                conversiones .
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Estrategia de marketing</li>
+                                <li>Gestión de campañas</li>
+                                <li>Gestión de redessociales</li>
+                                <li>Publicidad en redes</li>
+                                <li>Segmentación de audiencias</li>
+                                <li>Optimizacion de conversiones</li>
+                            </ul>
                         </div>
                     </div>
                     <!--Brand Building-->
                     <div class="certificacion">
-                        <div class="nombre">Brand building</div>
+                        <div class="nombre"><strong>Brand building</strong></div>
                         <div class="emisores">
                             <div class="emisor">Mercado Ads Academy</div>
                             <div class="fecha">Julio 2023</div>
                         </div>
-                        <div class="resumen">BHe perfeccionado estrategias para fortalecer marcas dentro del
+                        <div class="resumen">He perfeccionado estrategias para fortalecer marcas dentro del
                             marketplace. Con enfoque en incrementar el reconocimiento y la confianza del consumidor,
                             estoy preparado para impulsar marcas hacia nuevos niveles de visibilidad y éxito en
                             MercadoLibre.</div>
                         <div class="aptitudes">
-                            <p>Aptitudes destacadas: Branding · Posicionamiento de marcas en internet · Mejora de la
-                                confianza del consumidor.Estrategia de marca, análisis de mercado.
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Branding</li>
+                                <li>Posicionamiento de marcas en internet</li>
+                                <li>Mejora de la confianza del consumidor</li>
+                                <li>Análisis de mercado</li>
+                                <li>Estrategia de marca</li>
+                            </ul>
                         </div>
                     </div>
                     <!--Programacion IT-->
                     <div class="certificacion">
-                        <div class="nombre">Introduccion a la Programacion</div>
+                        <div class="nombre"><strong>Introduccion a la Programacion</strong></div>
                         <div class="emisores">
                             <div class="emisor">Educacion IT</div>
                             <div class="fecha">Mayo 2024</div>
@@ -144,16 +184,21 @@
                             utilizando editores de código para prácticas efectivas.
                         </div>
                         <div class="aptitudes">
-                            <p>Aptitudes destacadas: Fundamentos de la Programacion · Paradigmas y lenguajes de
-                                Programacion · Estructuras de control · NetBeans · Resolución de problemas mediante
-                                análisis de la causa raíz · Capacidad de análisis · Pensamiento Logico.
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Fundamentos de la programacion</li>
+                                <li>Paradigmas y Lenguajes de programacion</li>
+                                <li>Estructuras de control</li>
+                                <li>Resolucion de problemas</li>
+                                <li>Capacidad de analisis</li>
+                                <li>Pensamiento Logico</li>
+                            </ul>
                         </div>
                     </div>
                     <!---->
                     <!--Inteligencia Artificial y Productividad-->
                     <div class="certificacion">
-                        <div class="nombre">Inteligencia Artificial y Productividad</div>
+                        <div class="nombre"><strong>Inteligencia Artificial y Productividad</strong></div>
                         <div class="emisores">
                             <div class="emisor">Santander Open Academy con Google</div>
                             <div class="fecha">Julio 2024</div>
@@ -162,21 +207,23 @@
                             en el ámbito laboral y personal, con el objetivo de aumentar la eficiencia y productividad.
                         </div>
                         <div class="aptitudes">
-                            <p>Comprensión de IA
-                                Uso de Herramientas de IA
-                                Resumir Contenidos
-                                Aprender y Comprender
-                                Crear Contenidos
-                                Automatizar Tareas
-                                Creación de Peticiones Efectivas.
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Comprensión de IA</li>
+                                <li>Uso de Herramientas de IA</li>
+                                <li>Resumir Contenidos</li>
+                                <li>Aprender y Comprender</li>
+                                <li>Automatizar Tareas</li>
+                                <li>Creación de Peticiones Efectivas</li>
+                                <li>Resolver dudas</li>
+                            </ul>
                         </div>
                     </div>
                     <!---->
 
                     <!--Liderazgo Santander-->
                     <div class="certificacion">
-                        <div class="nombre">Liderazgo</div>
+                        <div class="nombre"><strong>Liderazgo</strong></div>
                         <div class="emisores">
                             <div class="emisor">Santander Open Academy</div>
                             <div class="fecha">Julio 2024</div>
@@ -186,19 +233,20 @@
                             liderazgo, competencias clave y herramientas para liderar con confianza y autenticidad..
                         </div>
                         <div class="aptitudes">
-                            <p>Aptitudes destacadas: Inteligencia Emocional
-                                Toma de Decisiones Efectiva
-                                Comunicación Persuasiva
-                                Construcción de Equipos Sólidos
-                                Adaptabilidad
-                                Autenticidad
-                                Desarrollo Personal
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Inteligencia Emocional</li>
+                                <li> Toma de Decisiones Efectiva</li>
+                                <li> Comunicación Persuasiva</li>
+                                <li> Adaptabilidad</li>
+                                <li>Autenticidad</li>
+                                <li>Desarrollo Personal</li>
+                            </ul>
                         </div>
                     </div>
                     <!--Product Ads-->
                     <div class="certificacion">
-                        <div class="nombre">Product Ads</div>
+                        <div class="nombre"><strong>Product Ads</strong></div>
                         <div class="emisores">
                             <div class="emisor">Mercado Ads Academy</div>
                             <div class="fecha">Julio 2023</div>
@@ -207,40 +255,49 @@
                             productos en MercadoLibre. Dominio en configuración y optimización de anuncios para alcanzar
                             audiencias específicas y maximizar conversiones.</div>
                         <div class="aptitudes">
-                            <p>Aptitudes destacadas: Mejora de Visibilidad de Productos,Optimización de conversiones,
-                                Performance.
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Mejora en la Visibilidad de Productos</li>
+                                <li>Optimizacion de conversiones</li>
+                                <li>Performance</li>
+                            </ul>
                         </div>
                     </div>
                     <!--Office Basico-->
                     <div class="certificacion">
-                        <div class="nombre">Introduccion a la Programacion</div>
+                        <div class="nombre"><strong>Office Basico</strong></div>
                         <div class="emisores">
-                            <div class="emisor">Educacion IT</div>
-                            <div class="fecha">Mayo 2024</div>
+                            <div class="emisor">Fundacion Telefonica</div>
+                            <div class="fecha">Marzo 2023</div>
                         </div>
                         <div class="resumen">Dominando Word para procesamiento de texto, Excel para hojas de cálculo
                         </div>
                         <div class="aptitudes">
-                            <p>Aptitudes destacadas: Microsoft Office .
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Microsoft Office</li>
+                            </ul>
                         </div>
                     </div>
                     <!---->
                     <!--Seguridad En internet-->
                     <div class="certificacion">
-                        <div class="nombre">Seguridad en Internet</div>
+                        <div class="nombre"><strong>Seguridad en internet</strong></div>
                         <div class="emisores">
                             <div class="emisor">Fundacion Telefonica</div>
                             <div class="fecha">Febrero 2023</div>
                         </div>
-                        <div class="resumen">Adquirí habilidades para proteger sistemas contra malware, configurar redes
+                        <div class="resumen">
+                            Adquirí habilidades para proteger sistemas contra malware, configurar redes
                             sociales y blogs de manera segura, y fortalecer la seguridad a nivel usuario. Aprendí
                             técnicas prácticas para mitigar riesgos y salvaguardar datos en entornos digitales.
                         </div>
                         <div class="aptitudes">
-                            <p>Aptitudes destacadas: Seguridad en Internet-Mejora de seguridad a nivel usuario.
-                            </p>
+                            <h4>Aptitudes Aprendidas</h4>
+                            <ul>
+                                <li>Seguridad en Internet</li>
+                                <li>Mejora de seguridad a nivel usuario</li>
+                            </ul>
                         </div>
                     </div>
                     <!---->
@@ -252,16 +309,45 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="container1">
-                <h3>Creado por Matias Gonzalez</h3>
-                <p>Pagina creada con HTML, CSS y JS para Proyecto Final de Introducción a la Programación</p>
-                <div class="logos">
-                    <ul>
-                        <li><i class="fa-brands fa-html5 fa-2xl" style="color:white;"></i></li>
-                        <li><i class="fa-brands fa-css3-alt fa-2xl" style="color:white;"></i></li>
-                        <li><i class="fa-brands fa-js fa-2xl" style="color:white;"></i></li>
-                    </ul>
+            <div class="contenedorFooter">
+                <div class="footerDetalles">
+                    <article id="link">
+                        <ul id="links">
+                            <li><a href="http://"><strong>Inicio</strong></a></li>
+                            <li><a href="http://"><strong>Experiencia Laboral</strong></a></li>
+                            <li><a href="http://"><strong>Certificaciones</strong></a></li>
+                            <li><a href="http://"><strong>Contacto</strong></a></li>
+                            <li><a href="http://"><strong>Sobre el Proyecto</strong></a></li>
+                        </ul>
+                    </article>
+                    <!---->
+                    <article id="atribucionIconos">
+                        <h3>Iconos utilizados :</h3>
+                        <ul id="atribucion">
+                            <li><a href="">fontawesome</a></li>
+                            <li><a href="">Flaticon</a></li>
+                        </ul>
+                    </article>
+                    <!---->
+                    <article id="info">
+                        <div class="informacion">
+                            <h3>Proyecto Final de Introducción a la Programación creado por Matias Gonzalez con :</h3>
+                            <div class="logos">
+                                <ul>
+                                    <li><i class="fa-brands fa-html5 fa-2xl" style="color:white;"></i></li>
+                                    <li><i class="fa-brands fa-css3-alt fa-2xl" style="color:white;"></i></li>
+                                    <li><i class="fa-brands fa-js fa-2xl" style="color:white;"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
+                <div class="copy">
+                    <h3> &copy; 2024 Matías González. Todos los derechos reservados. Este currículum fue realizado como
+                        proyecto final del curso de Introducción a la Programación.</h3>
+                </div>
+
             </div>
         </footer>
     </div>

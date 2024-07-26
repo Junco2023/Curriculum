@@ -381,6 +381,7 @@ padding: 0;
     box-shadow: 0 0 5px #343a40;
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-around;
 }
 
@@ -674,12 +675,18 @@ padding: 0;
         text-align: justify;
         margin: 0;
     }
+  
 }
 
 /*Fin Querry min-width 780 px*/
 /*Media Querry para celular medio 854 x 480 */
 /*    ORIENTACION VERTICAL : portrait*/
-
+@media(max-width:600px)and (min-width:480px){
+    .redireccion{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media(max-width:480px) and (orientation:portrait) {
     body {
         font-size: 0.9em;
@@ -786,12 +793,11 @@ padding: 0;
     /*Seccion redireccion*/
     .main .redireccion {
         flex-direction: column;
-        align-items: stretch;
         justify-content: center;
     }
 
     .redireccion .subtitulo h2 {
-        font-size: large;
+       font-size: 98%;
     }
 
     /*Descripcion de proyecto*/
@@ -810,7 +816,7 @@ padding: 0;
         display: block;
         margin-top: 0.5em;
         padding: 0.5em 0em 0.5em 0em;
-        box-shadow: 0 0 3px #f8f9fa;
+       
     }
 
 }
