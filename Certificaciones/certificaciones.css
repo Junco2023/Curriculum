@@ -23,8 +23,9 @@
     border-radius: 1.8em;
     
 }
+
 /*Seccion de cada certificado*/
-.seccion1 .certificados .certificacion {
+.seccion1 .certificados  .certificacion {
     display: flex;
     flex-direction: column;
     border: 1px solid #343a40;
@@ -95,9 +96,7 @@
     align-items: flex-start;
     justify-content: space-around;
 }
-/*li de cada ul*/
-.seccion1 .certificados .certificacion .aptitudes ul li{
-}
+
 
 /*             MEDIAS QUERRYS*/
 /*media querry max width 1000px*/
@@ -140,9 +139,6 @@
 /*Media celular */
 @media (max-width :560px) {
     
-    .seccion1 .certificados  {
-
-    }
     .seccion1 .certificados .certificacion{
         padding:0em  0.5em;
         width: 90%;
